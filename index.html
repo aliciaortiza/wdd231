@@ -1,10 +1,67 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course Home Page</title>
+    <link rel="stylesheet" href="styles/chamber.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Site Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <section class="about">
+            <h3>About Me</h3>
+            <p>
+                Massa facilisis per purus si imperdiet curae amet.
+                Et fames lorem mi phasellus congue nascetur enim consectetur sociosqu natoque risus.
+            </p>
+        </section>
+
+        <section class="photo">
+            <h3>Student Photo</h3>
+            <img src="images/student-photo.jpg" alt="Student Photo Placeholder">
+        </section>
+
+        <section class="courses">
+            <h3>Web Certificate Courses</h3>
+            <div class="filters">
+                <button onclick="filterCourses('all')">All</button>
+                <button onclick="filterCourses('cse')">CSE</button>
+                <button onclick="filterCourses('wdd')">WDD</button>
+            </div>
+            <ul id="course-list">
+                <li data-type="wdd">WDD 130</li>
+                <li data-type="wdd">WDD 131</li>
+                <li data-type="wdd">WDD 231</li>
+            </ul>
+            <p id="total-credits">The total credits for course listed above is 6</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">X</a>
+        </div>
+        <p>© 2026 • Alicia Ortiz • Costa Rica</p>
+        <p id="last-modified"></p>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
 </body>
+
 </html>
