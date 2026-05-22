@@ -124,3 +124,18 @@ nav ul {
     border-bottom: 3px solid var(--color-accent);
     margin-bottom: 1.5rem;
 }
+
+/*------INFO SECTION-----*/
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.info-column {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
