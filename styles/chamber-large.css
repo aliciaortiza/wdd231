@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+    .info-container {
+        flex-direction: row;
+        
+    }
+
+    .info-column {
+        flex: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    .header-nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+}
