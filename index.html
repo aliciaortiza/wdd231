@@ -3,72 +3,164 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Alicia Ortiz">
+    <meta name="description"
+        content="The Guadalupe Chamber of Commerce is a community hub supporting women-owned businesses in Guadalupe, San José, Costa Rica. Our site promotes local economic growth, provides event information, hosts networking opportunities, and encourages local shopping to strengthen community connections.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Home Page</title>
+    <title>Guadalupe Chamber of Commerce</title>
+
     <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+
+    <script src="scripts/chamber.js" defer></script>
+
     <link rel="icon" href="images/favicon.ico">
 
     <meta property="og:title" content="Guadalupe Chamber of Commerce">
-    <meta property="og:description" content="The Guadalupe Chamber of Commerce is a community hub supporting women-owned businesses in Guadalupe, San José, Costa Rica. Our site promotes local economic growth, provides event information, hosts networking opportunities, and encourages local shopping to strengthen community connections.">
+    <meta property="og:description"
+        content="The Guadalupe Chamber of Commerce is a community hub supporting women-owned businesses in Guadalupe, San José, Costa Rica. Our site promotes local economic growth, provides event information, hosts networking opportunities, and encourages local shopping to strengthen community connections.">
     <meta property="og:image" content="https://cdn.phototourl.com/free/2026-05-18-8e7ee102-7dbf-49f0-89aa-e076f1c19ab9.jpg">
+    
+    <meta property="og:url" content="https://aliciaortiza.github.io/wdd231">
 
-    <meta property="og:url" content="https://aliciaortiza.github.io/wdd231/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Site Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chamber Project</a></li>
-                <li><a href="#">Final Project</a></li>
-            </ul>
-        </nav>
+        <svg class="header-logo" height="171px" width="171px" version="1.1" id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+            xml:space="preserve" fill="#042524">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <g>
+                    <path style="fill:#2f7b4f;"
+                        d="M10.199,288.583c0-42.869,34.752-77.621,77.621-77.621s77.621,34.752,77.621,77.621H10.199z">
+                    </path>
+                    <path style="fill:#2f7b4f;"
+                        d="M346.558,288.583c0-42.869,34.752-77.621,77.621-77.621s77.622,34.753,77.622,77.621H346.558z">
+                    </path>
+                    <path style="fill:#2f7b4f;"
+                        d="M259.105,389.975c30.313-30.313,79.46-30.313,109.773,0c30.313,30.313,30.313,79.46,0,109.773 L259.105,389.975z">
+                    </path>
+                    <path style="fill:#2f7b4f;"
+                        d="M254.999,389.975c-30.313-30.313-79.46-30.313-109.773,0c-30.313,30.313-30.313,79.46,0,109.773 L254.999,389.975z">
+                    </path>
+                    <path style="fill:#2f7b4f;"
+                        d="M307.748,174.739H204.252V64c0-28.579,23.169-51.748,51.748-51.748l0,0 c28.579,0,51.748,23.169,51.748,51.748V174.739z">
+                    </path>
+                </g>
+                <circle style="fill:
+        #A67C52
+        ;" cx="256" cy="277.204" r="170.245"></circle>
+                <polygon style="fill:
+        
+        #d94f70
+        ;" points="174.245,229.998 256,182.797 337.755,229.998 337.755,324.4 256,371.602 174.245,324.4 "></polygon>
+                <path
+                    d="M424.18,200.763c-1.558,0-3.124,0.043-4.685,0.125c-20.129-42.954-56.688-76.736-101.546-93.182V64 c0-34.157-27.79-61.947-61.947-61.947S194.054,29.843,194.054,64v43.707c-44.86,16.447-81.419,50.231-101.548,93.186 c-1.56-0.083-3.125-0.129-4.684-0.129C39.396,200.763,0,240.16,0,288.583c0,5.633,4.566,10.199,10.199,10.199h66.648 c4.678,39.071,21.889,74.34,47.486,101.669c-9.018,15.387-13.176,33.319-11.773,51.284c1.626,20.824,10.666,40.436,25.454,55.225 c1.992,1.992,4.602,2.987,7.212,2.987s5.221-0.995,7.212-2.987l55.753-55.753c15.234,4.19,31.263,6.441,47.809,6.441 c17.145,0,33.738-2.405,49.461-6.893l56.205,56.205c1.992,1.992,4.602,2.987,7.212,2.987s5.221-0.995,7.212-2.987 c14.789-14.789,23.828-34.403,25.454-55.229c1.444-18.5-3.024-36.957-12.609-52.643c24.899-27.134,41.617-61.883,46.218-100.306 h66.649c5.633,0,10.199-4.566,10.199-10.199C512,240.16,472.604,200.763,424.18,200.763z M214.452,64 c0-22.909,18.638-41.548,41.548-41.548c22.91,0,41.548,18.638,41.548,41.548v37.587c-13.345-3.157-27.253-4.835-41.548-4.835 c-14.295,0-28.204,1.679-41.548,4.835V64z M21.168,278.384c4.765-31.266,31.086-55.537,63.273-57.134 c-5.762,17.623-8.891,36.426-8.891,55.949c0,0.397,0.012,0.789,0.015,1.185L21.168,278.384L21.168,278.384z M121.618,190.36 l22.637,22.637c1.992,1.992,4.602,2.987,7.212,2.987c2.61,0,5.221-0.995,7.212-2.987c3.983-3.983,3.983-10.441,0-14.425 l-24.756-24.756c29.381-34.641,73.201-56.669,122.075-56.669s92.694,22.028,122.075,56.669l-42.909,42.909l-68.966-39.817v-11.484 c0-5.633-4.566-10.199-10.199-10.199s-10.199,4.566-10.199,10.199v11.484l-76.655,44.257c-3.156,1.822-5.1,5.188-5.1,8.833v88.508 l-43.635,43.635c-15.487-24.634-24.462-53.757-24.462-84.942C95.95,245.211,105.388,215.39,121.618,190.36z M267.234,436.849 v-59.957l69.244-39.979l42.545,42.545C351.888,412.049,312.077,433.724,267.234,436.849z M132.503,378.897l42.362-42.362 l71.97,41.552v58.893C200.889,434.374,160.062,412.305,132.503,378.897z M256,194.574l71.556,41.313v82.625L256,359.825 l-71.556-41.313v-82.625L256,194.574z M145.763,484.786c-15.009-20.324-17.359-47.248-6.136-69.797 c14.036,11.873,29.899,21.646,47.107,28.826L145.763,484.786z M368.341,484.788l-41.594-41.594 c17.233-7.373,33.095-17.35,47.087-29.439C385.773,436.55,383.627,464.09,368.341,484.788z M391.19,362.777l-43.236-43.236v-86.753 l42.428-42.428c16.23,25.029,25.668,54.851,25.668,86.839C416.05,308.652,406.925,338.011,391.19,362.777z M436.434,278.384 c0.003-0.396,0.015-0.789,0.015-1.185c0-19.522-3.129-38.326-8.891-55.949c32.187,1.597,58.508,25.869,63.273,57.134H436.434z">
+                </path>
+                <path
+                    d="M256,147.68c5.633,0,10.199-4.566,10.199-10.199v-2.07c0-5.633-4.566-10.199-10.199-10.199s-10.199,4.566-10.199,10.199 v2.07C245.801,143.114,250.367,147.68,256,147.68z">
+                </path>
+            </g>
+        </svg>
+        <h1 class="header-title">Guadalupe Chamber of Commerce</h1>
+
+        <div class="header-nav">
+            <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">🩵Home</a></li>
+                    <li><a href="chamber.html">Chamber Project</a></li>
+                    <li><a href="final.html">Final Project</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
 
+
     <main>
-        <h2>Home</h2>
-        <section class="about">
-            <h3>About Me</h3>
-            <p>
-                Massa facilisis per purus si imperdiet curae amet.
-                Et fames lorem mi phasellus congue nascetur enim consectetur sociosqu natoque risus.
-            </p>
-        </section>
-
-        <section class="photo">
-            <h3>Student Photo</h3>
-            <img src="images/student-photo.jpg" alt="Student Photo Placeholder">
-        </section>
-
-        <section class="courses">
-            <h3>Web Certificate Courses</h3>
-            <div class="filters">
-                <button onclick="filterCourses('all')">All</button>
-                <button onclick="filterCourses('cse')">CSE</button>
-                <button onclick="filterCourses('wdd')">WDD</button>
+        <section class="hero">
+            <div class="hero-images">
+                <picture>
+                    <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                    <img src="images/hero-small.webp" alt="Sea Turtle" width="500" height="250">
+                </picture>
             </div>
-            <ul id="course-list">
-                <li data-type="wdd">WDD 130</li>
-                <li data-type="wdd">WDD 131</li>
-                <li data-type="wdd">WDD 231</li>
-            </ul>
-            <p id="total-credits">The total credits for course listed above is 6</p>
+
+            <h1 class="hero-title">Home</h1>
         </section>
+
+        <section class="info-column">
+            <div class="about-me">
+                <h2>About Us</h2>
+                <p>
+                    My name is Alicia Ortiz, and I am passionate about exploring the world and connecting with people. Traveling allows me
+                    to discover new cultures, traditions, and cuisines, which constantly inspires me to grow both personally and
+                    professionally.
+                    
+                    I thrive in communities where I feel safe and supported, and I love building healthy relationships that encourage
+                    learning and personal development—especially alongside other amazing women.
+                    
+                    Currently, I am pursuing a degree in Systems Engineering and Software Development, combining my love for technology with
+                    my curiosity for problem-solving and innovation.
+                    
+                    Born and raised in Guadalupe, San José, Costa Rica, I carry with me the warmth of my culture while embracing
+                    opportunities to expand my knowledge and experiences globally.
+                </p>
+
+            </div>
+
+            
+        </section>
+
+        <section>
+            <div class="me-photo">
+                <h2>Student Photo</h2>
+                <img src="images/alicia-profile.webp" alt="Alicia Ortiz Arias">
+            </div>
+        </section>
+
+        <section class="web-courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="how-columns">
+                
+            </div>
+        </section>
+
+        
+
+
     </main>
 
     <footer>
-        <div class="social">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-            <a href="#">X</a>
-        </div>
-        <p id="year"></p> • Alicia Ortiz • Costa Rica</p>
-        <p id="last-modified"></p>
-    </footer>
+        <section>
+            <div class="logos">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/github.svg" alt="GitHub">
+                </a>
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/twitter.svg" alt="X">
+                </a>
+            </div>
+        </section>
+        <div class="footer-content">
+            <p>&copy;<span id="currentyear"></span> 🐢 Alicia Ortiz Arias 🐢 Costa Rica</p>
+            <p id="lastModified"></p>
 
-    <script src="scripts/chamber.js"></script>
+        </div>
+    </footer>
 </body>
 
 </html>
