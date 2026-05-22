@@ -96,3 +96,49 @@ const courses = [
         completed: false
     }
 ]
+
+//COURSES CONFIG
+const coursesContainer = document.querySelector('.courses-columns');
+const totalCreditsEl = document.getElementById('total-credits');
+
+// función para mostrar cursos
+function displayCourses(filteredCourses) {
+    coursesContainer.innerHTML = ''; // limpiar
+    let totalCredits = 0;
+
+    filteredCourses.forEach(course => {
+        const card = document.createElement('div');
+        card.classList.add('course-card');
+        card.classList.add(course.completed ? 'completed' : 'not-completed');
+        card.innerHTML = `
+      <h3>${course.subject} ${course.number}</h3>
+      <p>${course.title}</p>
+      <p>Credits: ${course.credits}</p>
+    `;
+        coursesContainer.appendChild(card);
+
+        if (course.completed) {
+            totalCredits += course.credits;
+        }
+    });
+
+    totalCreditsEl.textContent = `The total credits for course listed above is: ${totalCredits}`;
+}
+
+// mostrar todos al inicio
+displayCourses(courses);
+
+// botones
+document.getElementById('all-btn').addEventListener('click', () => {
+    displayCourses(courses);
+});
+
+document.getElementById('cse-btn').addEventListener('click', () => {
+    const cseCourses = courses.filter(c => c.subject === 'CSE');
+    displayCourses(cseCourses);
+});
+
+document.getElementById('wdd-btn').addEventListener('click', () => {
+    const wddCourses = courses.filter(c => c.subject === 'WDD');
+    displayCourses(wddCourses);
+});

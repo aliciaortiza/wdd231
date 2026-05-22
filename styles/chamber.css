@@ -119,3 +119,42 @@ header {
     border: 1px solid #ddd;
     border-radius: 8px;
 }
+
+/*-----COURSES------*/
+.course-card {
+    border: 1px solid var(--color-secondary);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: #fff;
+}
+
+.course-card.completed {
+    background-color: #d4edda;
+    /* verde suave */
+    border-color: var(--color-secondary);
+}
+
+.course-card.not-completed {
+    background-color: #f8d7da;
+    /* rojo/rosado suave */
+    border-color: var(--color-accent);
+}
+
+.course-buttons {
+    margin: 1rem 0;
+}
+
+.course-buttons button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--color-primary);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.course-buttons button:hover {
+    background-color: var(--color-accent);
+}
