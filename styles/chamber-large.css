@@ -1,9 +1,3 @@
-@media (min-width: 768px) {
-    main {
-        grid-template-columns: 1fr 1fr;
-        /* escritorio: dos columnas */
-    }
-}
 
 @media (min-width: 768px) {
     #menu-toggle {
@@ -15,9 +9,12 @@
         flex-direction: row;
         gap: 0.5rem;
     }
-}
 
-@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        /* escritorio: dos columnas */
+    }
+
     .courses-columns {
         grid-template-columns: repeat(3, 1fr);
         /* tres columnas en pantallas grandes */
