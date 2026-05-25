@@ -121,12 +121,14 @@ header {
     background-color: var(--color-secondary);
     /* verde suave */
     border-color: var(--color-secondary);
+    color: var(--color-background);
 }
 
 .course-card.not-completed {
     background-color: var(--color-accent);
     /* rojo/rosado suave */
     border-color: var(--color-accent);
+    color: var(--color-background);
 }
 
 .course-buttons {
