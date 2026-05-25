@@ -59,6 +59,8 @@ header {
     align-items: center;
     text-align: center;
     justify-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed var(--color-primary);
 }
 
 .hamburger::before {
@@ -77,6 +79,7 @@ header {
     gap: 1rem;
     list-style: none;
     padding: 0;
+    
 }
 
 .header-nav.show ul{
@@ -89,6 +92,7 @@ header {
 
 /*--------HERO----------*/
 
+
 /*------INFO SECTION-----*/
 .info-container {
     display: flex;
@@ -100,7 +104,7 @@ header {
 .info-column {
     background-color: var(--color-background);
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-accent);
     border-radius: 8px;
 }
 
@@ -114,7 +118,7 @@ header {
     border-radius: 8px;
     padding: 1rem;
     margin: 0.5rem;
-    background-color: #fff;
+    background-color: var(--color-background);
 }
 
 .course-card.completed {
@@ -140,7 +144,7 @@ header {
     padding: 0.5rem 1rem;
     border: none;
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-background);
     cursor: pointer;
     border-radius: 4px;
 }
@@ -162,4 +166,43 @@ header {
 
 .logo-linkedin, .logo-github, .logo-twitter {
     width: 4%;
+}
+
+/*------FOOTER-----*/
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 1rem;
+    font-size: 0.9rem;
+    /* tamaño legible */
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+    text-align: center;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-logos img {
+    height: 30px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-logos img:hover {
+    transform: scale(1.1);
 }
