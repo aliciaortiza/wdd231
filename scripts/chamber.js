@@ -101,7 +101,6 @@ const courses = [
 const coursesContainer = document.querySelector('.courses-columns');
 const totalCreditsEl = document.getElementById('total-credits');
 
-// función para mostrar cursos
 function displayCourses(filteredCourses) {
     coursesContainer.innerHTML = ''; // limpiar
     let totalCredits = 0;
@@ -111,12 +110,13 @@ function displayCourses(filteredCourses) {
         card.classList.add('course-card');
         card.classList.add(course.completed ? 'completed' : 'not-completed');
         card.innerHTML = `
-      <h3>${course.subject} ${course.number}</h3>
-      <p>${course.title}</p>
-      <p>Credits: ${course.credits}</p>
-    `;
+          <h3>${course.subject} ${course.number}</h3>
+          <p>${course.title}</p>
+          <p>Credits: ${course.credits}</p>
+        `;
         coursesContainer.appendChild(card);
 
+        // sumar solo si está completado
         if (course.completed) {
             totalCredits += course.credits;
         }

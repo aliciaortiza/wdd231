@@ -49,6 +49,7 @@ main {
     align-items: center;
     margin: 0 5% 0 5%;
     color: var(--color-text);
+    font-family: var(--font-special);
 }
 
 /*--------HEADER--------*/
@@ -89,22 +90,6 @@ header {
 
 /*--------HERO----------*/
 
-.hero-volunteer,
-.hero-donate,
-.hero-home,
-.hero-volunteer-donate {
-    display: none;
-}
-
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-bottom: 3px solid var(--color-accent);
-    margin-bottom: 1.5rem;
-}
-
 /*------INFO SECTION-----*/
 .info-container {
     display: flex;
@@ -114,10 +99,14 @@ header {
 }
 
 .info-column {
-    background-color: #f9f9f9;
+    background-color: var(--color-background);
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
+}
+
+.me-photo{
+    width: 30%;
 }
 
 /*-----COURSES------*/
@@ -130,13 +119,13 @@ header {
 }
 
 .course-card.completed {
-    background-color: #d4edda;
+    background-color: var(--color-secondary);
     /* verde suave */
     border-color: var(--color-secondary);
 }
 
 .course-card.not-completed {
-    background-color: #f8d7da;
+    background-color: var(--color-accent);
     /* rojo/rosado suave */
     border-color: var(--color-accent);
 }
@@ -157,4 +146,19 @@ header {
 
 .course-buttons button:hover {
     background-color: var(--color-accent);
+}
+
+.courses-columns {
+  display: grid;
+  grid-template-columns: 1fr; /* una columna en pantallas pequeñas */
+  gap: 1rem;
+}
+
+
+
+
+/* ------- LOGOS ------- */
+
+.logo-linkedin, .logo-github, .logo-twitter {
+    width: 4%;
 }
