@@ -11,8 +11,7 @@
     }
 
     main {
-        grid-template-columns: 1fr 1fr;
-        
+        grid-template-columns: 1fr 1fr;        
         grid-template-areas:
             "title title"
             "about photo"
