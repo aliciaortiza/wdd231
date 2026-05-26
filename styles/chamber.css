@@ -132,14 +132,12 @@ header {
 
 .course-card.completed {
     background-color: var(--color-secondary);
-    /* verde suave */
     border-color: var(--color-secondary);
     color: var(--color-background);
 }
 
 .course-card.not-completed {
     background-color: var(--color-accent);
-    /* rojo/rosado suave */
     border-color: var(--color-accent);
     color: var(--color-background);
 }
@@ -150,7 +148,6 @@ header {
 
 .web-courses {
     grid-column: 1 / -1;
-    /* ocupa todo el ancho */
     text-align: center;
 }
 
@@ -187,7 +184,6 @@ footer {
     color: var(--color-background);
     padding: 1rem;
     font-size: 0.9rem;
-    /* tamaño legible */
     margin-top: 2rem;
 }
 
