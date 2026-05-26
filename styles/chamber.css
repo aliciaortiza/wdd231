@@ -69,7 +69,6 @@ header {
 
 .header-title {
     color: #bb3e5c;
-    width: 0.3fr;
 }
 
 .hamburger::before {
