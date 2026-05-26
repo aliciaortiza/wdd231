@@ -157,7 +157,6 @@ header {
 .courses-columns {
     display: grid;
     grid-template-columns: 1fr;
-    /* móvil: una columna */
     gap: 1rem;
 }
 
@@ -174,15 +173,6 @@ header {
 .course-buttons button:hover {
     background-color: var(--color-accent);
 }
-
-.courses-columns {
-  display: grid;
-  grid-template-columns: 1fr; /* una columna en pantallas pequeñas */
-  gap: 1rem;
-}
-
-
-
 
 /* ------- LOGOS ------- */
 
