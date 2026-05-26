@@ -12,11 +12,27 @@
 
     main {
         grid-template-columns: 1fr 1fr;
-        /* escritorio: dos columnas */
+        
+        grid-template-areas:
+            "title title"
+            "about photo"
+            "courses courses";
+    }
+    
+    .about-me {
+        grid-area: about;
+    }
+    
+    .student-photo {
+        grid-area: photo;
+    }
+    
+    .web-courses {
+        grid-area: courses;
     }
 
     .courses-columns {
         grid-template-columns: repeat(3, 1fr);
-        /* tres columnas en pantallas grandes */
+ 
     }
 }

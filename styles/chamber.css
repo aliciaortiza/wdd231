@@ -49,9 +49,9 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    align-items: center;
-    margin: 0 5% 0 5%;
+    margin: 0 5%;
     color: var(--color-text);
+    grid-template-areas: "title" "about" "photo" "courses";
 }
 
 /*--------HEADER--------*/
@@ -70,7 +70,7 @@ header {
 .header-title {
     color: #bb3e5c;
     width: 0.8;
-} 
+}
 
 .hamburger::before {
     content: "\2630";
@@ -100,7 +100,11 @@ header {
 }
 
 /*--------HERO----------*/
-
+.hero-title {
+    grid-area: title;
+    text-align: center;
+    color: var(--color-primary);
+}
 
 /*------INFO SECTION-----*/
 .info-column {
@@ -112,7 +116,7 @@ header {
 }
 
 .me-photo {
-    width: 100%;
+    width: 30%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -143,6 +147,19 @@ header {
 
 .course-buttons {
     margin: 1rem 0;
+}
+
+.web-courses {
+    grid-column: 1 / -1;
+    /* ocupa todo el ancho */
+    text-align: center;
+}
+
+.courses-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* móvil: una columna */
+    gap: 1rem;
 }
 
 .course-buttons button {
