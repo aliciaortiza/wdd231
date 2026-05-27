@@ -4,6 +4,7 @@
     --color-secondary: #2f7b4f;
     --color-accent: #bb3e5c;
     --color-background: #F4F1EC;
+    --color-special-background: #fffdf9;
     --color-text: #042524;
 
     --font-heading: 'Montserrat', sans-serif;
@@ -119,13 +120,15 @@ header {
 }
 
 .member-card {
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-accent);
+    border-radius: 15px;
     padding: 1rem;
-    background: #fff;
+    background: var(--color-special-background);
+    color: var(--color-text);
 }
 
 .member-card img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
 }
 
@@ -136,7 +139,6 @@ footer {
     color: var(--color-background);
     padding: 1rem;
     font-size: 0.9rem;
-    margin-top: 2rem;
 }
 
 .footer-contact{
