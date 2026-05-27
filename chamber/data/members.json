@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Sweet Home Bakery",
+        "address": "Av. Central #12, Guadalupe, San José",
+        "phone": "+506 2222-1111",
+        "website": "https://sweethomecr.com",
+        "image": "bakery.jpg",
+        "membership": 3,
+        "info": "Artisan bakery run by local women entrepreneurs."
+    },
+    {
+        "name": "Charm Boutique",
+        "address": "Calle 5, Guadalupe, San José",
+        "phone": "+506 2233-2222",
+        "website": "https://charmboutique.com",
+        "image": "boutique.jpg",
+        "membership": 2,
+        "info": "Fashion and accessories designed by Costa Rican women."
+    },
+    {
+        "name": "Tico Women Coffee",
+        "address": "Boulevard Guadalupe, San José",
+        "phone": "+506 2244-3333",
+        "website": "https://ticowomencoffee.com",
+        "image": "coffee.jpg",
+        "membership": 1,
+        "info": "Cooperative of women coffee producers."
+    },
+    {
+        "name": "Aurora Creative Studio",
+        "address": "Guadalupe, San José",
+        "phone": "+506 2255-4444",
+        "website": "https://aurorastudio.com",
+        "image": "aurora.jpg",
+        "membership": 3,
+        "info": "Graphic design and digital marketing agency."
+    },
+    {
+        "name": "Vida Mujer Pharmacy",
+        "address": "Plaza Guadalupe, San José",
+        "phone": "+506 2266-5555",
+        "website": "https://vidamujerpharmacy.com",
+        "image": "pharmacy.jpg",
+        "membership": 2,
+        "info": "Community pharmacy focused on women’s health."
+    },
+    {
+        "name": "Casero Flavor Restaurant",
+        "address": "Av. 7, Guadalupe, San José",
+        "phone": "+506 2277-6666",
+        "website": "https://caseroflavor.com",
+        "image": "restaurant.jpg",
+        "membership": 1,
+        "info": "Traditional Costa Rican food prepared by women chefs."
+    },
+    {
+        "name": "Brilliant Academy",
+        "address": "Guadalupe, San José",
+        "phone": "+506 2288-7777",
+        "website": "https://brilliantacademy.com",
+        "image": "academy.jpg",
+        "membership": 3,
+        "info": "Educational center founded by women for professional training."
+    }
+]

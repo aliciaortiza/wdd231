@@ -69,6 +69,7 @@ header {
 
 .header-title {
     color: #bb3e5c;
+    font-size: 1rem;
 }
 
 .hamburger::before {
@@ -95,7 +96,7 @@ header {
 }
 
 .header-logo {
-    width: 70px;
+    width: 20%;
 }
 
 /*--------HERO----------*/
@@ -103,6 +104,29 @@ header {
     grid-area: title;
     text-align: center;
     color: var(--color-primary);
+}
+
+/*-----MEMBERS DIRECTORY-----*/
+
+#membersContainer.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+#membersContainer.list-view {
+    display: block;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background: #fff;
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
 }
 
 /*------FOOTER-----*/

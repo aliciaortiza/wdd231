@@ -20,8 +20,8 @@
     <meta property="og:site_name" content="Guadalupe Chamber of Commerce">
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <script src="scripts/directory.js" defer></script>
 
@@ -91,7 +91,17 @@
 
 
     <main>
-        <h1 class="hero-title">Home</h1>
+        <h1 class="hero-title">Directory</h1>
+
+        <main>
+            <div class="view-toggle">
+                <button id="gridBtn">Grid View</button>
+                <button id="listBtn">List View</button>
+            </div>
+            <div id="membersContainer" class="grid-view"></div>
+        </main>
+        <script src="js/directory.js"></script>
+
 
     </main>
 

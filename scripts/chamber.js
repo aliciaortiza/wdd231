@@ -112,7 +112,6 @@ function displayCourses(filteredCourses) {
         card.innerHTML = `
           <h3>${course.subject} ${course.number}</h3>
           <p>${course.title}</p>
-          <p>Credits: ${course.credits}</p>
         `;
         coursesContainer.appendChild(card);
 
