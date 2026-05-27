@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    .header-nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 0.7rem;
+    }
+
+    /* FOOTER */
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-contact {
+        grid-column: 1;
+        justify-self: start;
+    }
+
+    .footer-logos {
+        grid-column: 2;
+        justify-self: center;
+    }
+
+    .footer-content {
+        grid-column: 3;
+        justify-self: end;
+        text-align: right;
+    }
+}

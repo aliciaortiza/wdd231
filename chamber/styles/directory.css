@@ -1,0 +1,152 @@
+/*-------GENERAL STYLE-------*/
+:root {
+    --color-primary: #7d5936;
+    --color-secondary: #2f7b4f;
+    --color-accent: #bb3e5c;
+    --color-background: #F4F1EC;
+    --color-text: #042524;
+
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --font-special: 'Playfair Display', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1 {
+    color: var(--color-primary);
+}
+
+h1,
+h2 {
+    font-family: var(--font-heading);
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-secondary);
+}
+
+a {
+    color: var(--color-accent);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0 5%;
+    color: var(--color-text);
+    grid-template-areas: "title" "about" "photo" "courses";
+}
+
+/*--------HEADER--------*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed var(--color-primary);
+
+}
+
+.header-title {
+    color: #bb3e5c;
+}
+
+.hamburger::before {
+    content: "\2630";
+    /* ☰ */
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    /* × */
+}
+
+.header-nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+
+}
+
+.header-nav.show ul {
+    display: flex;
+}
+
+.header-logo {
+    width: 70px;
+}
+
+/*--------HERO----------*/
+.hero-title {
+    grid-area: title;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+/*------FOOTER-----*/
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+.footer-contact{
+    justify-items: left;
+}
+
+.title-footer {
+    font-weight: bold;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr;
+    justify-items: left;
+}
+
+.footer-content p {
+    margin: 0;
+    text-align: center;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content:center;
+    gap: 1rem;
+    margin: 0.5rem;
+}
+
+.footer-logos img {
+    height: 30px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-logos img:hover {
+    transform: scale(1.1);
+}
