@@ -119,6 +119,12 @@ header {
     display: block;
 }
 
+
+
+.list-view .member-card img {
+    display: none;
+}
+
 .member-card {
     border: 1px solid var(--color-accent);
     border-radius: 15px;

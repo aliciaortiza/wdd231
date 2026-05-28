@@ -4,7 +4,7 @@
         "address": "Av. Central #12, Guadalupe, San José",
         "phone": "+506 2222-1111",
         "website": "https://sweethomecr.com",
-        "image": "bakery.jpg",
+        "image": "bakery.webp",
         "membership": 3,
         "info": "Artisan bakery run by local women entrepreneurs."
     },
@@ -13,7 +13,7 @@
         "address": "Calle 5, Guadalupe, San José",
         "phone": "+506 2233-2222",
         "website": "https://charmboutique.com",
-        "image": "boutique.jpg",
+        "image": "boutique.webp",
         "membership": 2,
         "info": "Fashion and accessories designed by Costa Rican women."
     },
@@ -22,7 +22,7 @@
         "address": "Boulevard Guadalupe, San José",
         "phone": "+506 2244-3333",
         "website": "https://ticowomencoffee.com",
-        "image": "coffee.jpg",
+        "image": "coffee.webp",
         "membership": 1,
         "info": "Cooperative of women coffee producers."
     },
@@ -31,7 +31,7 @@
         "address": "Guadalupe, San José",
         "phone": "+506 2255-4444",
         "website": "https://aurorastudio.com",
-        "image": "aurora.jpg",
+        "image": "aurora.webp",
         "membership": 3,
         "info": "Graphic design and digital marketing agency."
     },
@@ -40,7 +40,7 @@
         "address": "Plaza Guadalupe, San José",
         "phone": "+506 2266-5555",
         "website": "https://vidamujerpharmacy.com",
-        "image": "pharmacy.jpg",
+        "image": "pharmacy.webp",
         "membership": 2,
         "info": "Community pharmacy focused on women’s health."
     },
@@ -49,7 +49,7 @@
         "address": "Av. 7, Guadalupe, San José",
         "phone": "+506 2277-6666",
         "website": "https://caseroflavor.com",
-        "image": "restaurant.jpg",
+        "image": "restaurant.webp",
         "membership": 1,
         "info": "Traditional Costa Rican food prepared by women chefs."
     },
@@ -58,7 +58,7 @@
         "address": "Guadalupe, San José",
         "phone": "+506 2288-7777",
         "website": "https://brilliantacademy.com",
-        "image": "academy.jpg",
+        "image": "academy.webp",
         "membership": 3,
         "info": "Educational center founded by women for professional training."
     }
