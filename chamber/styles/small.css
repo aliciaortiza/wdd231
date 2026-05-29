@@ -111,29 +111,21 @@ header {
 
 .view-toggle button {
     background-color: var(--color-accent);
-    /* color principal */
-    color: #fff;
-    /* texto blanco */
+    color: var(--color-background);
     border: none;
     padding: 0.6rem 1.2rem;
     margin: 0.3rem;
     border-radius: 8px;
-    /* bordes redondeados */
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    /* animación suave */
 }
 
-/* Efecto hover */
 .view-toggle button:hover {
     background-color: var(--color-accent-dark);
-    /* tono más oscuro */
     transform: scale(1.05);
-    /* ligero zoom */
 }
 
-/* Botón activo */
 .view-toggle button.active {
     background-color: var(--color-special-background);
     color: var(--color-accent);
