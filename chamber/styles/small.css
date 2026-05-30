@@ -281,7 +281,7 @@ footer {
 #weather-icon {
     width: 80px;
     height: 80px;
-    background-color: var(--color-text);
+    background-color: #7d59366a;
     border-radius: 50%;
     padding: 0.2rem;
 }
@@ -419,7 +419,7 @@ footer {
 .membership-tag {
     margin-top: auto;
     padding: 0.3rem 0.8rem;
-    background-color: var(--color-text);
+    background-color: #2f7b4f18;
     color: var(--color-secondary);
     border-radius: 20px;
     font-size: 0.8rem;
