@@ -112,26 +112,32 @@
                 </div>
             </section>
         
-            <section class="weather-current-card">
-                <h2>Current Weather</h2>
-                <div id="weather-info">
-                    <img id="weather-icon" src="" alt="">
-                    <p id="current-temp"></p>
-                    <p id="weather-desc" class="capitalize"></p>
-                    <hr>
-                    <p>High: <span id="high-temp"></span></p>
-                    <p>Low: <span id="low-temp"></span></p>
-                    <p>Humidity: <span id="humidity"></span>%</p>
-                    <p>Sunrise: <span id="sunrise"></span></p>
-                    <p>Sunset: <span id="sunset"></span></p>
+        <section class="weather-current-card">
+            <h2>Current Weather</h2>
+            <div id="weather-info">
+                <div class="weather-main">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <div class="temp-group">
+                        <p id="current-temp"></p>
+                        <p id="weather-desc" class="capitalize"></p>
+                    </div>
                 </div>
-            </section>
         
-            <section class="weather-forecast-card">
-                <h2>Weather Forecast</h2>
-                <div id="forecast-content">
+                <div class="weather-details">
+                    <p><span>High:</span> <strong id="high-temp"></strong></p>
+                    <p><span>Low:</span> <strong id="low-temp"></strong></p>
+                    <p><span>Humidity:</span> <span><strong id="humidity"></strong>%</span></p>
+                    <p><span>Sunrise:</span> <strong id="sunrise"></strong></p>
+                    <p><span>Sunset:</span> <strong id="sunset"></strong></p>
                 </div>
-            </section>
+            </div>
+        </section>
+        
+        <section class="weather-forecast-card">
+            <h2>Weather Forecast</h2>
+            <div id="forecast-content">
+            </div>
+        </section>
         </div>
         
         <section class="spotlights-container">
@@ -139,7 +145,6 @@
             <div id="member-spotlights"></div>
         </section>
         
-
     </main>
 
 

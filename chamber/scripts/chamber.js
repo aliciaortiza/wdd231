@@ -1,19 +1,26 @@
-//footer
+// --- FOOTER ---
+const currentYearEl = document.getElementById("currentyear");
+if (currentYearEl) {
+    currentYearEl.textContent = new Date().getFullYear();
+}
 
-document.getElementById("currentyear").textContent = new Date().getFullYear();
+const lastModifiedEl = document.getElementById("lastModified");
+if (lastModifiedEl) {
+    lastModifiedEl.textContent = `Last Modification: ${document.lastModified}`;
+}
 
-document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
-
-//hamburguer menu
+// --- HAMBURGER MENU ---
 const navButton = document.querySelector('#menu-toggle');
 const navBar = document.querySelector('#nav-bar');
 
-navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navBar.classList.toggle('show');
-});
+if (navButton && navBar) {
+    navButton.addEventListener('click', () => {
+        navButton.classList.toggle('show');
+        navBar.classList.toggle('show');
+    });
+}
 
-//members
+// --- MEMBERS DIRECTORY ---
 async function loadMembers() {
     try {
         const response = await fetch('data/members.json');
@@ -26,6 +33,8 @@ async function loadMembers() {
 
 function displayMembers(members) {
     const container = document.getElementById('membersContainer');
+    if (!container) return; 
+
     container.innerHTML = '';
 
     members.forEach(member => {
@@ -33,40 +42,48 @@ function displayMembers(members) {
         card.classList.add('member-card');
 
         card.innerHTML = `
-      <img src="images/${member.image}" alt="${member.name}">
-      <h3>${member.name}</h3>
-      <p><strong>Address:</strong> ${member.address}</p>
-      <p><strong>Phone:</strong> ${member.phone}</p>
-      <p><a href="${member.website}" target="_blank">Visit Website</a></p>
-      <p><strong>Membership:</strong> ${member.membership}</p>
-      <p>${member.info}</p>
-    `;
+          <img src="images/${member.image}" alt="${member.name}">
+          <h3>${member.name}</h3>
+          <p><strong>Address:</strong> ${member.address}</p>
+          <p><strong>Phone:</strong> ${member.phone}</p>
+          <p><a href="${member.website}" target="_blank">Visit Website</a></p>
+          <p><strong>Membership:</strong> ${member.membership}</p>
+          <p>${member.info}</p>
+        `;
 
         container.appendChild(card);
     });
 }
 
-document.getElementById('gridBtn').addEventListener('click', () => {
-    document.getElementById('membersContainer').classList.add('grid-view');
-    document.getElementById('membersContainer').classList.remove('list-view');
-});
+const gridBtn = document.getElementById('gridBtn');
+const listBtn = document.getElementById('listBtn');
+const membersContainer = document.getElementById('membersContainer');
 
-document.getElementById('listBtn').addEventListener('click', () => {
-    document.getElementById('membersContainer').classList.add('list-view');
-    document.getElementById('membersContainer').classList.remove('grid-view');
-});
+if (gridBtn && listBtn && membersContainer) {
+    gridBtn.addEventListener('click', () => {
+        membersContainer.classList.add('grid-view');
+        membersContainer.classList.remove('list-view');
+    });
 
-loadMembers();
+    listBtn.addEventListener('click', () => {
+        membersContainer.classList.add('list-view');
+        membersContainer.classList.remove('grid-view');
+    });
+
+    loadMembers(); 
+}
 
 // --- WEATHER API ---
 const lat = 9.946;
 const lon = -84.056;
-const apiKey = '431808a61aed84eca387eaa5b8234d03'; // tu key válida
+const apiKey = '431808a61aed84eca387eaa5b8234d03';
 
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
 async function fetchWeather() {
+    if (!document.getElementById('current-temp')) return;
+
     try {
         const response = await fetch(weatherUrl);
         const data = await response.json();
@@ -86,23 +103,23 @@ async function fetchWeather() {
         document.getElementById('sunrise').textContent = formatTime(data.sys.sunrise);
         document.getElementById('sunset').textContent = formatTime(data.sys.sunset);
 
-        // Forecast
         const fResponse = await fetch(forecastUrl);
         const fData = await fResponse.json();
 
         const dailyForecast = fData.list.filter(item => item.dt_txt.includes("12:00:00")).slice(0, 3);
         const forecastContainer = document.getElementById('forecast-content');
 
-        forecastContainer.innerHTML = ""; // limpiar antes de agregar
-
-        dailyForecast.forEach(day => {
-            const date = new Date(day.dt_txt).toLocaleDateString('en-US', { weekday: 'long' });
-            forecastContainer.innerHTML += `
-                <div class="forecast-day">
-                    <p><strong>${date}</strong>: ${Math.round(day.main.temp)}&deg;C</p>
-                </div>
-            `;
-        });
+        if (forecastContainer) {
+            forecastContainer.innerHTML = "";
+            dailyForecast.forEach(day => {
+                const date = new Date(day.dt_txt).toLocaleDateString('en-US', { weekday: 'long' });
+                forecastContainer.innerHTML += `
+                    <div class="forecast-day">
+                        <p><strong>${date}</strong>: ${Math.round(day.main.temp)}&deg;C</p>
+                    </div>
+                `;
+            });
+        }
 
     } catch (error) {
         console.error("Error fetching weather:", error);
@@ -111,21 +128,20 @@ async function fetchWeather() {
 
 // --- MEMBER SPOTLIGHTS ---
 async function getSpotlights() {
+    const container = document.getElementById('member-spotlights');
+    if (!container) return; //
+
     try {
         const response = await fetch('data/members.json');
         if (!response.ok) throw new Error('No se pudo cargar el JSON de miembros');
         const members = await response.json();
 
-        // Filtrar Gold (3) o Silver (2)
         const eligible = members.filter(m => m.membership === 3 || m.membership === 2);
 
-        // Mezclar aleatoriamente
         const shuffled = eligible.sort(() => 0.5 - Math.random());
 
-        // Tomar 3 (o 2 si hay pocos)
         const selected = shuffled.slice(0, 3);
 
-        const container = document.getElementById('member-spotlights');
         container.innerHTML = "";
 
         selected.forEach(m => {
@@ -144,10 +160,9 @@ async function getSpotlights() {
 
     } catch (error) {
         console.error("Error Miembros:", error);
-        document.getElementById('member-spotlights').innerHTML = "Error loading members.";
+        container.innerHTML = "Error loading members.";
     }
 }
 
-// EJECUTAR AL CARGAR
 fetchWeather();
 getSpotlights();

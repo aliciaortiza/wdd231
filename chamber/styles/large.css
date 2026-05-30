@@ -23,6 +23,26 @@
         padding: 0.9rem 1.3rem;
         font-size: 0.95rem;
     }
+
+    /*MAIN INDEX*/
+
+    .top-grid-container {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    
+    #member-spotlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .top-grid-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    #member-spotlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
         
 
     /* FOOTER */
@@ -49,12 +69,5 @@
         justify-self: end;
         text-align: right;
     }
-
-    .top-grid-container {
-        grid-template-columns: 2fr 1fr 1fr;
-    }
-    
-    #spotlight-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
+        
 }

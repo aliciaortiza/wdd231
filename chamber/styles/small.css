@@ -47,12 +47,11 @@ a {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
-    margin: 0 5%;
+    margin: 2rem 5%;
     color: var(--color-text);
-    grid-template-areas: "title" "about" "photo" "courses";
 }
 
 /*--------HEADER--------*/
@@ -265,8 +264,100 @@ footer {
     border: 1px solid #ddd;
 }
 
+/* --- WEATHER --- */
+#weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.weather-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+#weather-icon {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(47, 123, 79, 0.08);
+    border-radius: 50%;
+    padding: 0.2rem;
+}
+
+.temp-group {
+    text-align: left;
+}
+
+#current-temp {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+#weather-desc {
+    font-size: 1rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin: 0;
+}
+
+.weather-details {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.weather-details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    border-bottom: 1px dashed #e8e8e8;
+    padding-bottom: 0.3rem;
+}
+
+.weather-details span {
+    color: #666;
+}
+
+/* --- WEATHER FORECAST --- */
+#forecast-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.forecast-day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-background);
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--color-secondary);
+}
+
+.forecast-day p {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+}
+
 /* Spotlights Grid */
-#spotlight-cards {
+#member-spotlights {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -291,6 +382,74 @@ footer {
     text-transform: uppercase;
 }
 
+#member-spotlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.spotlight-card {
+    background-color: var(--color-special-background);
+    border: 1px solid #e0e0e0;
+    border-top: 4px solid var(--color-secondary);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.spotlight-card img {
+    max-width: 120px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.spotlight-card h3 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-card p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+.spotlight-card a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
+
+.membership-tag {
+    margin-top: auto;
+    padding: 0.3rem 0.8rem;
+    background-color: rgba(47, 123, 79, 0.08);
+    color: var(--color-secondary);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .capitalize {
     text-transform: capitalize;
 }
@@ -298,3 +457,23 @@ footer {
 .home-title {
     margin: 2rem 0;
 }
+
+/* --- EVENTS --- */
+#events-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+#events-content p {
+    background-color: rgba(187, 62, 92, 0.05);
+    border-left: 4px solid var(--color-accent);
+    padding: 0.8rem 1.2rem;
+    border-radius: 0 8px 8px 0;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* --- SPOTLIGHTS */
