@@ -68,7 +68,7 @@ header {
 }
 
 .header-title {
-    color: #bb3e5c;
+    color: var(--color-accent);
     font-size: 1rem;
 }
 
@@ -137,15 +137,12 @@ header {
     font-size: 1rem;
     transition: all 0.3s ease;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
 }
 
 .hero-call-action a:hover {
     background-color: var(--color-primary);
     transform: translateY(-2px);
-}
-
-.hero-call-action a {
-    backdrop-filter: blur(8px);
 }
 
 /*-----MEMBERS DIRECTORY-----*/
@@ -284,7 +281,7 @@ footer {
 #weather-icon {
     width: 80px;
     height: 80px;
-    background-color: rgba(47, 123, 79, 0.08);
+    background-color: var(--color-text);
     border-radius: 50%;
     padding: 0.2rem;
 }
@@ -364,15 +361,10 @@ footer {
     margin-top: 1rem;
 }
 
-.spotlight-card {
-    border: 2px solid var(--color-secondary);
-    padding: 1rem;
-    border-radius: 8px;
-}
-
 .spotlight-card img {
     max-width: 150px;
     height: auto;
+    object-fit: contain;
     margin-bottom: 10px;
 }
 
@@ -380,13 +372,6 @@ footer {
     font-weight: bold;
     color: var(--color-accent);
     text-transform: uppercase;
-}
-
-#member-spotlights {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
 }
 
 .spotlight-card {
@@ -406,13 +391,6 @@ footer {
 .spotlight-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
-
-.spotlight-card img {
-    max-width: 120px;
-    height: 80px;
-    object-fit: contain;
-    margin-bottom: 1rem;
 }
 
 .spotlight-card h3 {
@@ -441,7 +419,7 @@ footer {
 .membership-tag {
     margin-top: auto;
     padding: 0.3rem 0.8rem;
-    background-color: rgba(47, 123, 79, 0.08);
+    background-color: var(--color-text);
     color: var(--color-secondary);
     border-radius: 20px;
     font-size: 0.8rem;
@@ -468,12 +446,10 @@ footer {
 }
 
 #events-content p {
-    background-color: rgba(187, 62, 92, 0.05);
+    background-color: var(--color-text);
     border-left: 4px solid var(--color-accent);
     padding: 0.8rem 1.2rem;
     border-radius: 0 8px 8px 0;
     margin: 0;
     font-size: 0.95rem;
 }
-
-/* --- SPOTLIGHTS */
