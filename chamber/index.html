@@ -22,8 +22,6 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <script src="scripts/chamber.js" defer></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -31,6 +29,8 @@
         rel="stylesheet">
 
     <link rel="icon" href="images/favicon.ico">
+
+    <script src="scripts/chamber.js" defer></script>
 
 </head>
 
@@ -90,31 +90,55 @@
 
 
     <main>
-        <section class="hero-container">
+        <section class="hero">
             <div class="hero-image">
-                <img src="images/hero" alt="Guadalupe Chamber of Commerce">
+                <img src="images/hero.webp" alt="Guadalupe Chamber of Commerce">
             </div>
+        
             <div class="hero-call-action">
-                <a href="join.html">Join Us!</a>
+                <a href="join.html">Join the Chamber</a>
             </div>
         </section>
 
-        <h1>Home</h1>
+        <h1 class="home-title">Home</h1>
 
-        <section class="events-container">
-            <h2>Events</h2>
-
+        <div class="top-grid-container">
+            <section class="events-card">
+                <h2>Events</h2>
+                <div id="events-content">
+                    <p><strong>Chamber Networking Mixer</strong> - June 15th</p>
+                    <p><strong>Small Business Workshop</strong> - June 22nd</p>
+                    <p><strong>Guadalupe Community Fair</strong> - July 5th</p>
+                </div>
+            </section>
+        
+            <section class="weather-current-card">
+                <h2>Current Weather</h2>
+                <div id="weather-info">
+                    <img id="weather-icon" src="" alt="">
+                    <p id="current-temp"></p>
+                    <p id="weather-desc" class="capitalize"></p>
+                    <hr>
+                    <p>High: <span id="high-temp"></span></p>
+                    <p>Low: <span id="low-temp"></span></p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Sunrise: <span id="sunrise"></span></p>
+                    <p>Sunset: <span id="sunset"></span></p>
+                </div>
+            </section>
+        
+            <section class="weather-forecast-card">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-content">
+                </div>
+            </section>
+        </div>
+        
+        <section class="spotlights-container">
+            <h2>Member Spotlights</h2>
+            <div id="member-spotlights"></div>
         </section>
-
-        <section class="weather-section">
-            <h2>Current Weather</h2>
-
-        </section>
-
-        <section class="companies-section">
-            <h2></h2>
-
-        </section>
+        
 
     </main>
 

@@ -9,6 +9,22 @@
         gap: 0.7rem;
     }
 
+    /*HERO*/
+    .hero-image img {
+        height: 50vh;
+    }
+
+    .hero-call-action {
+        bottom: 1rem;
+        left: 1rem;
+    }
+
+    .hero-call-action a {
+        padding: 0.9rem 1.3rem;
+        font-size: 0.95rem;
+    }
+        
+
     /* FOOTER */
 
     footer {
@@ -32,5 +48,13 @@
         grid-column: 3;
         justify-self: end;
         text-align: right;
+    }
+
+    .top-grid-container {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    
+    #spotlight-cards {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

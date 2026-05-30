@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Empresa A",
+        "membership": 3,
+        "image": "a.jpg",
+        "address": "Calle 1",
+        "phone": "1234",
+        "website": "https://a.example"
+    },
+    {
+        "name": "Empresa B",
+        "membership": 2,
+        "image": "b.jpg",
+        "address": "Calle 2",
+        "phone": "5678",
+        "website": "https://b.example"
+    },
+    {
+        "name": "Empresa C",
+        "membership": 1,
+        "image": "c.jpg",
+        "address": "Calle 3",
+        "phone": "9012",
+        "website": "https://c.example"
+    }
+]

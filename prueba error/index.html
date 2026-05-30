@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Spotlights Test</title>
+</head>
+
+<body>
+    <section class="spotlights-container">
+        <h2>Member Spotlights</h2>
+        <div id="member-spotlights"></div>
+    </section>
+
+    <script>
+        async function getSpotlights() {
+            try {
+                const res = await fetch('data/members.json');
+                if (!res.ok) throw new Error('fetch failed ' + res.status);
+                const members = await res.json();
+                const eligible = members.filter(m => Number(m.membership) === 3 || Number(m.membership) === 2);
+                const selected = eligible.sort(() => 0.5 - Math.random()).slice(0, 3);
+                const container = document.getElementById('member-spotlights');
+                container.innerHTML = '';
+                selected.forEach(m => {
+                    container.innerHTML += `
+            <article class="spotlight-card">
+              <img src="images/${m.image}" alt="${m.name}" width="120">
+              <h3>${m.name}</h3>
+              <p>${m.address}</p>
+              <p>${m.phone}</p>
+              <p><a href="${m.website}" target="_blank">Website</a></p>
+              <p class="membership-tag">${Number(m.membership) === 3 ? 'Gold' : 'Silver'} Member</p>
+            </article>
+          `;
+                });
+            } catch (e) {
+                console.error('Error Miembros:', e);
+                const c = document.getElementById('member-spotlights');
+                if (c) c.textContent = 'Error loading members.';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            getSpotlights();
+        });
+    </script>
+</body>
+
+</html>
