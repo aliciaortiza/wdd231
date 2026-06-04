@@ -6,6 +6,11 @@
     --color-background: #F4F1EC;
     --color-special-background: #fffdf9;
     --color-text: #042524;
+    --color-normal: #5c5757;
+    --color-bronze: #cd7f32;
+    --color-silver: #c0c0c0;
+    --color-gold: #ffd700;
+    --color-shadows: rgba(0, 0, 0, 0.3);
 
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Roboto', sans-serif;
@@ -136,7 +141,7 @@ header {
     font-weight: 700;
     font-size: 1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px var(--color-shadows);
     backdrop-filter: blur(8px);
 }
 
@@ -257,8 +262,8 @@ footer {
     background-color: var(--color-special-background);
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px var(--color-shadows);
+    border: 1px solid var(--color-special-background);
 }
 
 /* --- WEATHER --- */
@@ -310,7 +315,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid var(--color-special-background);
     padding-top: 1.2rem;
     font-size: 0.9rem;
 }
@@ -319,12 +324,12 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    border-bottom: 1px dashed #e8e8e8;
+    border-bottom: 1px dashed var(--color-special-background);
     padding-bottom: 0.3rem;
 }
 
 .weather-details span {
-    color: #666;
+    color: var(--color-normal);
 }
 
 /* --- WEATHER FORECAST --- */
@@ -376,11 +381,11 @@ footer {
 
 .spotlight-card {
     background-color: var(--color-special-background);
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--color-special-background);
     border-top: 4px solid var(--color-secondary);
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 12px var(--color-shadows);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -390,7 +395,7 @@ footer {
 
 .spotlight-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 20px var(--color-shadows);
 }
 
 .spotlight-card h3 {
@@ -478,8 +483,8 @@ footer {
     background-color: var(--color-special-background);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px var(--color-shadows);
+    border: 1px solid var(--color-special-background);
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
@@ -500,7 +505,7 @@ footer {
 .form-label select,
 .form-label textarea {
     padding: 0.8rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-special-background);
     border-radius: 6px;
     background-color: var(--color-background);
     color: var(--color-text);
@@ -548,10 +553,10 @@ footer {
 
 .card {
     background-color: var(--color-special-background);
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-special-background);
     border-radius: 8px;
     padding: 1.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px var(--color-shadows);
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -566,19 +571,19 @@ footer {
 }
 
 .np-card {
-    border-top: 5px solid #888;
+    border-top: 5px solid var(--color-normal);
 }
 
 .bronze-card {
-    border-top: 5px solid #cd7f32;
+    border-top: 5px solid var(--color-bronze);
 }
 
 .silver-card {
-    border-top: 5px solid #c0c0c0;
+    border-top: 5px solid var(--color-silver);
 }
 
 .gold-card {
-    border-top: 5px solid #ffd700;
+    border-top: 5px solid var(--color-gold);
 }
 
 .info-link {
@@ -633,7 +638,7 @@ footer {
     border-radius: 12px;
     padding: 2rem;
     background-color: var(--color-special-background);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px var(--color-shadows);
     max-width: 500px;
     width: 90%;
     margin: auto;
@@ -659,7 +664,7 @@ footer {
 
 .modal-content li {
     padding: 0.5rem 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--color-special-background);
     color: var(--color-text);
 }
 
@@ -688,10 +693,10 @@ footer {
 
 .summary-card {
     background-color: var(--color-special-background);
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-special-background);
     border-radius: 10px;
     padding: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px var(--color-shadows);
     margin: 2rem 0;
     text-align: left;
 }
@@ -703,7 +708,7 @@ footer {
 
 .summary-details p {
     margin: 0.8rem 0;
-    border-bottom: 1px dashed #eee;
+    border-bottom: 1px dashed var(--color-special-background);
     padding-bottom: 0.5rem;
     font-size: 1rem;
     color: var(--color-text);
