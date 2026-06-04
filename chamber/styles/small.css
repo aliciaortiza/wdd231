@@ -17,9 +17,13 @@
     --font-special: 'Playfair Display', serif;
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
+    border: 0;
+}
+
+body {
     background-color: var(--color-background);
     color: var(--color-text);
     font-family: var(--font-body);
@@ -27,24 +31,20 @@ body {
     text-align: center;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
 }
 
 h1 {
     color: var(--color-primary);
-}
-
-h1,
-h2 {
-    font-family: var(--font-heading);
     text-align: center;
 }
 
 h2 {
     color: var(--color-secondary);
+    text-align: center;
 }
 
 a {
@@ -56,11 +56,9 @@ main {
     flex-direction: column;
     gap: 1rem;
     margin: 2rem 5%;
-    color: var(--color-text);
 }
 
 /*--------HEADER--------*/
-
 header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -69,7 +67,6 @@ header {
     justify-items: center;
     margin-bottom: 10px;
     border-bottom: 1px dashed var(--color-primary);
-
 }
 
 .header-title {
@@ -79,12 +76,10 @@ header {
 
 .hamburger::before {
     content: "\2630";
-    /* ☰ */
 }
 
 .hamburger.show::before {
     content: "\00D7";
-    /* × */
 }
 
 .header-nav ul {
@@ -93,7 +88,6 @@ header {
     gap: 1rem;
     list-style: none;
     padding: 0;
-
 }
 
 .header-nav.show ul {
@@ -151,11 +145,9 @@ header {
 }
 
 /*-----MEMBERS DIRECTORY-----*/
-
 .view-toggle button {
     background-color: var(--color-accent);
     color: var(--color-background);
-    border: none;
     padding: 0.6rem 1.2rem;
     margin: 0.3rem;
     border-radius: 8px;
@@ -194,7 +186,6 @@ header {
     border-radius: 15px;
     padding: 1rem;
     background: var(--color-special-background);
-    color: var(--color-text);
 }
 
 .member-card img {
@@ -203,7 +194,6 @@ header {
 }
 
 /*------FOOTER-----*/
-
 footer {
     background-color: var(--color-primary);
     color: var(--color-background);
@@ -211,7 +201,7 @@ footer {
     font-size: 0.9rem;
 }
 
-.footer-contact{
+.footer-contact {
     justify-items: left;
 }
 
@@ -226,13 +216,12 @@ footer {
 }
 
 .footer-content p {
-    margin: 0;
     text-align: center;
 }
 
 .footer-logos {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 1rem;
     margin: 0.5rem;
 }
@@ -247,23 +236,20 @@ footer {
     transform: scale(1.1);
 }
 
-/*------- MAIN LAYOUT GRID -------*/
-.top-grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
+/*------- COMPONENT CARDS (OPTIMIZED & GROUPED) -------*/
 .events-card,
 .weather-current-card,
 .weather-forecast-card,
-.spotlights-container {
+.spotlights-container,
+.spotlight-card,
+.join-form,
+.card,
+.summary-card {
     background-color: var(--color-special-background);
-    padding: 1.5rem;
+    border: 1px solid var(--color-special-background);
     border-radius: 10px;
     box-shadow: 0 4px 10px var(--color-shadows);
-    border: 1px solid var(--color-special-background);
+    padding: 1.5rem;
 }
 
 /* --- WEATHER --- */
@@ -300,14 +286,12 @@ footer {
     font-weight: 800;
     line-height: 1.1;
     color: var(--color-primary);
-    margin: 0;
 }
 
 #weather-desc {
     font-size: 1rem;
     color: var(--color-secondary);
     font-weight: 600;
-    margin: 0;
 }
 
 .weather-details {
@@ -323,7 +307,6 @@ footer {
 .weather-details p {
     display: flex;
     justify-content: space-between;
-    margin: 0;
     border-bottom: 1px dashed var(--color-special-background);
     padding-bottom: 0.3rem;
 }
@@ -351,7 +334,6 @@ footer {
 }
 
 .forecast-day p {
-    margin: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -380,11 +362,7 @@ footer {
 }
 
 .spotlight-card {
-    background-color: var(--color-special-background);
-    border: 1px solid var(--color-special-background);
     border-top: 4px solid var(--color-secondary);
-    padding: 1.5rem;
-    border-radius: 10px;
     box-shadow: 0 4px 12px var(--color-shadows);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -399,7 +377,6 @@ footer {
 }
 
 .spotlight-card h3 {
-    font-family: var(--font-heading);
     color: var(--color-primary);
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
@@ -408,7 +385,6 @@ footer {
 .spotlight-card p {
     margin: 0.2rem 0;
     font-size: 0.9rem;
-    color: var(--color-text);
 }
 
 .spotlight-card a {
@@ -455,7 +431,6 @@ footer {
     border-left: 4px solid var(--color-accent);
     padding: 0.8rem 1.2rem;
     border-radius: 0 8px 8px 0;
-    margin: 0;
     font-size: 0.95rem;
 }
 
@@ -480,11 +455,7 @@ footer {
 
 /* Form Styles */
 .join-form {
-    background-color: var(--color-special-background);
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px var(--color-shadows);
-    border: 1px solid var(--color-special-background);
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
@@ -495,7 +466,6 @@ footer {
     flex-direction: column;
     gap: 0.4rem;
     font-weight: 600;
-    color: var(--color-text);
     font-size: 0.95rem;
 }
 
@@ -552,12 +522,6 @@ footer {
 }
 
 .card {
-    background-color: var(--color-special-background);
-    border: 1px solid var(--color-special-background);
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 10px var(--color-shadows);
-    text-align: center;
     transition: transform 0.3s ease;
 }
 
@@ -634,7 +598,6 @@ footer {
 
 /* Dialog (Modals) Styles */
 .membership-modal {
-    border: none;
     border-radius: 12px;
     padding: 2rem;
     background-color: var(--color-special-background);
@@ -652,12 +615,10 @@ footer {
 .modal-content h2 {
     color: var(--color-primary);
     margin-bottom: 1rem;
-    font-family: var(--font-heading);
 }
 
 .modal-content ul {
     list-style-type: none;
-    padding: 0;
     margin: 1.5rem 0;
     text-align: left;
 }
@@ -665,13 +626,11 @@ footer {
 .modal-content li {
     padding: 0.5rem 0;
     border-bottom: 1px solid var(--color-special-background);
-    color: var(--color-text);
 }
 
 .modal-content .close-btn {
     background-color: var(--color-accent);
     color: var(--color-special-background);
-    border: none;
     padding: 0.6rem 1.5rem;
     border-radius: 6px;
     cursor: pointer;
@@ -692,11 +651,6 @@ footer {
 }
 
 .summary-card {
-    background-color: var(--color-special-background);
-    border: 1px solid var(--color-special-background);
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 4px 10px var(--color-shadows);
     margin: 2rem 0;
     text-align: left;
 }
@@ -711,7 +665,6 @@ footer {
     border-bottom: 1px dashed var(--color-special-background);
     padding-bottom: 0.5rem;
     font-size: 1rem;
-    color: var(--color-text);
 }
 
 .home-btn {
@@ -727,4 +680,76 @@ footer {
 
 .home-btn:hover {
     background-color: var(--color-primary);
+}
+
+/*------- MEDIA QUERY FOR LARGE SCREENS -------*/
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    .header-nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 0.7rem;
+    }
+
+    /*HERO*/
+    .hero-image img {
+        height: 50vh;
+    }
+
+    .hero-call-action {
+        bottom: 1rem;
+        left: 1rem;
+    }
+
+    .hero-call-action a {
+        padding: 0.9rem 1.3rem;
+        font-size: 0.95rem;
+    }
+
+    /*MAIN INDEX (FUSED & CLEANED)*/
+    .top-grid-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    #member-spotlights {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* FOOTER */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-contact {
+        grid-column: 1;
+        justify-self: start;
+    }
+
+    .footer-logos {
+        grid-column: 2;
+        justify-self: center;
+    }
+
+    .footer-content {
+        grid-column: 3;
+        justify-self: end;
+        text-align: right;
+    }
+
+    .join-container {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
 }
