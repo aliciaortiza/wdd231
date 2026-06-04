@@ -25,7 +25,12 @@ async function loadMembers() {
     try {
         const response = await fetch('data/members.json');
         const members = await response.json();
-        displayMembers(members);
+
+        const localMembers = JSON.parse(localStorage.getItem('customMembers')) || [];
+
+        const allMembers = [...members, ...localMembers];
+
+        displayMembers(allMembers);
     } catch (error) {
         console.error("Error loading members:", error);
     }
@@ -33,7 +38,7 @@ async function loadMembers() {
 
 function displayMembers(members) {
     const container = document.getElementById('membersContainer');
-    if (!container) return; 
+    if (!container) return;
 
     container.innerHTML = '';
 
@@ -41,13 +46,19 @@ function displayMembers(members) {
         const card = document.createElement('div');
         card.classList.add('member-card');
 
+        let levelText = member.membership;
+        if (member.membership === 3) levelText = "Gold";
+        else if (member.membership === 2) levelText = "Silver";
+        else if (member.membership === 1) levelText = "Bronze";
+        else if (member.membership === 0) levelText = "Non-Profit";
+
         card.innerHTML = `
           <img src="images/${member.image}" alt="${member.name}">
           <h3>${member.name}</h3>
           <p><strong>Address:</strong> ${member.address}</p>
           <p><strong>Phone:</strong> ${member.phone}</p>
           <p><a href="${member.website}" target="_blank">Visit Website</a></p>
-          <p><strong>Membership:</strong> ${member.membership}</p>
+          <p><strong>Membership:</strong> ${levelText}</p>
           <p>${member.info}</p>
         `;
 
@@ -70,7 +81,7 @@ if (gridBtn && listBtn && membersContainer) {
         membersContainer.classList.remove('grid-view');
     });
 
-    loadMembers(); 
+    loadMembers();
 }
 
 // --- WEATHER API ---
@@ -129,17 +140,20 @@ async function fetchWeather() {
 // --- MEMBER SPOTLIGHTS ---
 async function getSpotlights() {
     const container = document.getElementById('member-spotlights');
-    if (!container) return; //
+    if (!container) return;
 
     try {
         const response = await fetch('data/members.json');
         if (!response.ok) throw new Error('No se pudo cargar el JSON de miembros');
         const members = await response.json();
 
-        const eligible = members.filter(m => m.membership === 3 || m.membership === 2);
+        const localMembers = JSON.parse(localStorage.getItem('customMembers')) || [];
+
+        const allMembers = [...members, ...localMembers];
+
+        const eligible = allMembers.filter(m => m.membership === 3 || m.membership === 2);
 
         const shuffled = eligible.sort(() => 0.5 - Math.random());
-
         const selected = shuffled.slice(0, 3);
 
         container.innerHTML = "";
@@ -166,3 +180,51 @@ async function getSpotlights() {
 
 fetchWeather();
 getSpotlights();
+
+// --- JOIN FORM LOGIC & MODALS ---
+document.addEventListener("DOMContentLoaded", () => {
+    // Set hidden field load timestamp
+    const timestampInput = document.getElementById("timestamp");
+    if (timestampInput) {
+        timestampInput.value = new Date().toISOString();
+    }
+
+    // Modal display handlers
+    const infoLinks = document.querySelectorAll(".info-link");
+    infoLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const modalId = link.getAttribute("data-modal");
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.showModal();
+            }
+        });
+    });
+
+    // Close button handler for dialogs
+    const closeBtns = document.querySelectorAll(".close-btn");
+    closeBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const modal = btn.closest("dialog");
+            if (modal) {
+                modal.close();
+            }
+        });
+    });
+
+    // Optional: Close modal if clicking outside the modal box
+    const modals = document.querySelectorAll(".membership-modal");
+    modals.forEach(modal => {
+        modal.addEventListener("click", (e) => {
+            const rect = modal.getBoundingClientRect();
+            const isInDialog = (
+                rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
+                rect.left <= e.clientX && e.clientX <= rect.left + rect.width
+            );
+            if (!isInDialog) {
+                modal.close();
+            }
+        });
+    });
+});

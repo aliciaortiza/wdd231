@@ -453,3 +453,273 @@ footer {
     margin: 0;
     font-size: 0.95rem;
 }
+
+/*------- JOIN PAGE LAYOUT -------*/
+.join-main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.join-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Form Styles */
+.join-form {
+    background-color: var(--color-special-background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 600;
+    color: var(--color-text);
+    font-size: 0.95rem;
+}
+
+.form-label input[type="text"],
+.form-label input[type="email"],
+.form-label input[type="tel"],
+.form-label select,
+.form-label textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-label input:focus,
+.form-label select:focus,
+.form-label textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+}
+
+.form-label textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    background-color: var(--color-secondary);
+    color: var(--color-special-background);
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--color-primary);
+}
+
+/* Membership Cards Styles */
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--color-special-background);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.np-card {
+    border-top: 5px solid #888;
+}
+
+.bronze-card {
+    border-top: 5px solid #cd7f32;
+}
+
+.silver-card {
+    border-top: 5px solid #c0c0c0;
+}
+
+.gold-card {
+    border-top: 5px solid #ffd700;
+}
+
+.info-link {
+    display: inline-block;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+/* --- CARD ENTRANCE ANIMATION --- */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-card {
+    opacity: 0;
+    animation: slideInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.animate-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.animate-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.animate-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.animate-card:nth-child(4) {
+    animation-delay: 0.55s;
+}
+
+/* Dialog (Modals) Styles */
+.membership-modal {
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    background-color: var(--color-special-background);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+}
+
+.membership-modal::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content h2 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+}
+
+.modal-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.modal-content li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    color: var(--color-text);
+}
+
+.modal-content .close-btn {
+    background-color: var(--color-accent);
+    color: var(--color-special-background);
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.modal-content .close-btn:hover {
+    background-color: var(--color-primary);
+}
+
+/* Thank You Page styling */
+.thankyou-main {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.summary-card {
+    background-color: var(--color-special-background);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.summary-card h2 {
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.summary-details p {
+    margin: 0.8rem 0;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+.home-btn {
+    display: inline-block;
+    background-color: var(--color-secondary);
+    color: var(--color-special-background);
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.home-btn:hover {
+    background-color: var(--color-primary);
+}
