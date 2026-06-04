@@ -1,4 +1,4 @@
-/*-------GENERAL STYLE-------*/
+/*-------GENERAL STYLE & RESETS-------*/
 :root {
     --color-primary: #7d5936;
     --color-secondary: #2f7b4f;
@@ -31,20 +31,24 @@ body {
     text-align: center;
 }
 
+/* Typography */
 h1,
 h2,
 h3 {
     font-family: var(--font-heading);
 }
 
+h1,
+h2 {
+    text-align: center;
+}
+
 h1 {
     color: var(--color-primary);
-    text-align: center;
 }
 
 h2 {
     color: var(--color-secondary);
-    text-align: center;
 }
 
 a {
@@ -58,13 +62,21 @@ main {
     margin: 2rem 5%;
 }
 
+/* Interactivity Defaults */
+button,
+.submit-btn,
+.info-link,
+.home-btn,
+.view-toggle button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 /*--------HEADER--------*/
 header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
-    text-align: center;
-    justify-items: center;
     margin-bottom: 10px;
     border-bottom: 1px dashed var(--color-primary);
 }
@@ -87,7 +99,6 @@ header {
     flex-direction: column;
     gap: 1rem;
     list-style: none;
-    padding: 0;
 }
 
 .header-nav.show ul {
@@ -99,15 +110,14 @@ header {
 }
 
 /*--------HERO----------*/
-.hero-title {
-    grid-area: title;
-    text-align: center;
-    color: var(--color-primary);
-}
-
 .hero {
     position: relative;
     width: 100%;
+}
+
+.hero-title {
+    grid-area: title;
+    color: var(--color-primary);
 }
 
 .hero-image img {
@@ -118,7 +128,6 @@ header {
     border-bottom: 3px solid var(--color-accent);
 }
 
-/* CTA */
 .hero-call-action {
     position: absolute;
     bottom: 2rem;
@@ -133,7 +142,6 @@ header {
     padding: 1rem 1.8rem;
     border-radius: 12px;
     font-weight: 700;
-    font-size: 1rem;
     transition: all 0.3s ease;
     box-shadow: 0 8px 20px var(--color-shadows);
     backdrop-filter: blur(8px);
@@ -152,8 +160,6 @@ header {
     margin: 0.3rem;
     border-radius: 8px;
     font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .view-toggle button:hover {
@@ -215,10 +221,6 @@ footer {
     justify-items: left;
 }
 
-.footer-content p {
-    text-align: center;
-}
-
 .footer-logos {
     display: flex;
     justify-content: center;
@@ -228,7 +230,6 @@ footer {
 
 .footer-logos img {
     height: 30px;
-    width: auto;
     transition: transform 0.3s ease;
 }
 
@@ -236,7 +237,7 @@ footer {
     transform: scale(1.1);
 }
 
-/*------- COMPONENT CARDS (OPTIMIZED & GROUPED) -------*/
+/*------- GROUPED COMPONENT CARDS (DRY DESIGN) -------*/
 .events-card,
 .weather-current-card,
 .weather-forecast-card,
@@ -364,11 +365,9 @@ footer {
 .spotlight-card {
     border-top: 4px solid var(--color-secondary);
     box-shadow: 0 4px 12px var(--color-shadows);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 .spotlight-card:hover {
@@ -413,10 +412,6 @@ footer {
     text-transform: capitalize;
 }
 
-.home-title {
-    margin: 0;
-}
-
 /* --- EVENTS --- */
 #events-content {
     display: flex;
@@ -444,7 +439,6 @@ footer {
 
 .join-title {
     margin-bottom: 2rem;
-    text-align: center;
 }
 
 .join-container {
@@ -469,11 +463,8 @@ footer {
     font-size: 0.95rem;
 }
 
-.form-label input[type="text"],
-.form-label input[type="email"],
-.form-label input[type="tel"],
-.form-label select,
-.form-label textarea {
+/* Simplificación extrema usando el selector :is() */
+.form-label :is(input, select, textarea) {
     padding: 0.8rem;
     border: 1px solid var(--color-special-background);
     border-radius: 6px;
@@ -486,9 +477,7 @@ footer {
     width: 100%;
 }
 
-.form-label input:focus,
-.form-label select:focus,
-.form-label textarea:focus {
+.form-label :is(input, select, textarea):focus {
     outline: none;
     border-color: var(--color-secondary);
 }
@@ -502,12 +491,9 @@ footer {
     background-color: var(--color-secondary);
     color: var(--color-special-background);
     padding: 1rem;
-    border: none;
     border-radius: 8px;
     font-size: 1.1rem;
     font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
@@ -519,10 +505,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-}
-
-.card {
-    transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -633,9 +615,7 @@ footer {
     color: var(--color-special-background);
     padding: 0.6rem 1.5rem;
     border-radius: 6px;
-    cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s;
 }
 
 .modal-content .close-btn:hover {
@@ -647,7 +627,6 @@ footer {
     max-width: 600px;
     margin: 4rem auto;
     padding: 0 1rem;
-    text-align: center;
 }
 
 .summary-card {
@@ -675,81 +654,8 @@ footer {
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s;
 }
 
 .home-btn:hover {
     background-color: var(--color-primary);
-}
-
-/*------- MEDIA QUERY FOR LARGE SCREENS -------*/
-@media (min-width: 768px) {
-    #menu-toggle {
-        display: none;
-    }
-
-    .header-nav ul {
-        display: flex;
-        flex-direction: row;
-        gap: 0.7rem;
-    }
-
-    /*HERO*/
-    .hero-image img {
-        height: 50vh;
-    }
-
-    .hero-call-action {
-        bottom: 1rem;
-        left: 1rem;
-    }
-
-    .hero-call-action a {
-        padding: 0.9rem 1.3rem;
-        font-size: 0.95rem;
-    }
-
-    /*MAIN INDEX (FUSED & CLEANED)*/
-    .top-grid-container {
-        display: grid;
-        grid-template-columns: 1.5fr 1fr 1fr;
-        gap: 1.5rem;
-    }
-
-    #member-spotlights {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-    }
-
-    /* FOOTER */
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-        text-align: left;
-    }
-
-    .footer-contact {
-        grid-column: 1;
-        justify-self: start;
-    }
-
-    .footer-logos {
-        grid-column: 2;
-        justify-self: center;
-    }
-
-    .footer-content {
-        grid-column: 3;
-        justify-self: end;
-        text-align: right;
-    }
-
-    .join-container {
-        display: grid;
-        grid-template-columns: 1.2fr 1fr;
-        gap: 3rem;
-        align-items: start;
-    }
 }
