@@ -690,9 +690,6 @@ footer {
 }
 
 /* Asignación de áreas */
-.visitor-msg {
-    grid-area: msg;
-}
 
 .c1 {
     grid-area: c1;
@@ -728,6 +725,7 @@ footer {
 
 /* Estilos de las tarjetas de interés */
 .visitor-msg {
+    grid-area: msg;
     background-color: var(--color-secondary);
     color: var(--color-special-background);
     padding: 1rem 1.5rem;
