@@ -1,4 +1,4 @@
-import interests from '../data/interests.mjs';
+import interests from '../data/interest.mjs';
 
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Mostrar el mensaje de visitas basado en localStorage

@@ -247,7 +247,7 @@ footer {
 .card,
 .summary-card {
     background-color: var(--color-special-background);
-    border: 1px solid var(--color-special-background);
+    border: 1px solid var(--color-accent);
     border-radius: 10px;
     box-shadow: 0 4px 10px var(--color-shadows);
     padding: 1.5rem;
