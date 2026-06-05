@@ -1,3 +1,27 @@
+@media (min-width: 641px) {
+
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "msg msg"
+            "c1 c2"
+            "c3 c3"
+            "c4 c5"
+            "c6 c7"
+            "c8 c8";
+        gap: 2rem;
+    }
+
+    .interest-img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .interest-img:hover {
+        transform: scale(1.06);
+        filter: brightness(1.05) saturate(110%);
+    }
+}
+
 @media (min-width: 768px) {
     #menu-toggle {
         display: none;
@@ -9,7 +33,7 @@
         gap: 0.7rem;
     }
 
-    /*HERO*/
+    /* HERO */
     .hero-image img {
         height: 50vh;
     }
@@ -24,16 +48,7 @@
         font-size: 0.95rem;
     }
 
-    /*MAIN INDEX*/
-
-    .top-grid-container {
-        grid-template-columns: 2fr 1fr 1fr;
-    }
-    
-    #member-spotlights {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
+    /* MAIN INDEX */
     .top-grid-container {
         display: grid;
         grid-template-columns: 1.5fr 1fr 1fr;
@@ -41,7 +56,9 @@
     }
 
     #member-spotlights {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
     }
 
     .join-container {
@@ -52,7 +69,6 @@
     }
 
     /* FOOTER */
-
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -75,5 +91,17 @@
         justify-self: end;
         text-align: right;
     }
-        
+}
+
+@media (min-width: 1025px) {
+
+    .discover-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "msg msg msg"
+            "c1 c2 c3"
+            "c4 c4 c5"
+            "c6 c7 c7"
+            "c8 c8 c8";
+    }
 }

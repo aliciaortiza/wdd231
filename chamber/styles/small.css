@@ -655,3 +655,137 @@ footer {
 .home-btn:hover {
     background-color: var(--color-primary);
 }
+
+/*------- DISCOVER PAGE STYLE (MOBILE-FIRST) -------*/
+.discover-main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.discover-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* 
+   Áreas de rejilla nominadas para pantallas pequeñas (320px a 640px).
+   Una sola columna vertical de flujo ordenado.
+*/
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "msg"
+        "c1"
+        "c2"
+        "c3"
+        "c4"
+        "c5"
+        "c6"
+        "c7"
+        "c8";
+    gap: 1.5rem;
+}
+
+/* Asignación de áreas */
+.visitor-msg {
+    grid-area: msg;
+}
+
+.c1 {
+    grid-area: c1;
+}
+
+.c2 {
+    grid-area: c2;
+}
+
+.c3 {
+    grid-area: c3;
+}
+
+.c4 {
+    grid-area: c4;
+}
+
+.c5 {
+    grid-area: c5;
+}
+
+.c6 {
+    grid-area: c6;
+}
+
+.c7 {
+    grid-area: c7;
+}
+
+.c8 {
+    grid-area: c8;
+}
+
+/* Estilos de las tarjetas de interés */
+.visitor-msg {
+    background-color: var(--color-secondary);
+    color: var(--color-special-background);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 10px var(--color-shadows);
+}
+
+.interest-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: left;
+}
+
+.interest-card h2 {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    text-align: left;
+}
+
+.interest-figure {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.interest-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.interest-address {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--color-normal);
+}
+
+.interest-desc {
+    font-size: 0.95rem;
+    color: var(--color-text);
+}
+
+.learn-more-btn {
+    background-color: var(--color-accent);
+    color: var(--color-special-background);
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--color-primary);
+}
