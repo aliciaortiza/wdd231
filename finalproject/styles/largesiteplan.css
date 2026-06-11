@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        align-items: center;
+    }
+
+    .footer-meta {
+        border-top: none;
+        padding-top: 0;
+        text-align: right;
+    }
+}
