@@ -1,0 +1,624 @@
+<!-- siteplan.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humo y Sabor - Site Plan | WDD 231</title>
+    <meta name="description"
+        content="Official site plan and planning documentation for Humo y Sabor, a premium Colombian family-owned artisanal smoked food business. Created for WDD 231.">
+    <meta name="author" content="Alicia Ortiz">
+
+    <meta property="og:title" content="Humo y Sabor - Site Plan | WDD 231">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:description"
+        content="Comprehensive site plan detailing the branding, typography, target audience, future architecture, and layout wireframes for Humo y Sabor.">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/largesiteplan.css" media="screen and (min-width: 768px)">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <span class="logo-icon">🔥</span>
+                <div class="logo-text">
+                    <h1>Humo y Sabor</h1>
+                    <span class="logo-subtitle">Site Plan & Branding</span>
+                </div>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#project-info">Project Info</a></li>
+                    <li><a href="#target-audience">Audience</a></li>
+                    <li><a href="#color-scheme">Colors</a></li>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#architecture">Architecture</a></li>
+                    <li><a href="#functionality">Functionality</a></li>
+                    <li><a href="#wireframes">Wireframes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="siteplan-content">
+        <!-- Hero / Title Section -->
+        <section class="plan-hero">
+            <div class="hero-overlay">
+                <p class="hero-kicker">WDD 231 - Web Frontend Development II</p>
+                <h2>Crafting the Digital Identity of Humo y Sabor</h2>
+                <p class="hero-description">A professional planning and design strategy document outlining the upcoming
+                    retail, wholesale, and storytelling website for an artisanal smoked food family business.</p>
+            </div>
+        </section>
+
+        <!-- Project Info -->
+        <section id="project-info" class="plan-section">
+            <div class="section-badge">01</div>
+            <h2 class="section-title">Project Information</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Site Name</h3>
+                    <p class="highlight-text">Humo y Sabor</p>
+                    <h4>Reason for Site Name</h4>
+                    <p>"Humo y Sabor" represents the essence of the business. The products are traditionally smoked
+                        using artisanal methods, and flavor is the primary value delivered to customers. The name is
+                        memorable, authentic, and communicates both the smoking process and the premium quality of the
+                        products.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Site Purpose</h3>
+                    <p>Humo y Sabor is a family-owned smoked food business. The future website will promote and sell
+                        smoked products such as Colombian sausages, smoked beef, smoked chicken, ribs, and future smoked
+                        specialties. The website will:</p>
+                    <ul class="purpose-list">
+                        <li>Promote the business and display products.</li>
+                        <li>Share the family story and rich heritage.</li>
+                        <li>Provide contact information and show business location.</li>
+                        <li>Support online ordering and wholesale inquiries.</li>
+                        <li>Support retail customers and increase brand visibility to help grow the business.</li>
+                    </ul>
+                </div>
+
+                <div class="info-card full-width">
+                    <h3>Project Background</h3>
+                    <p>This project is inspired by a real family business. My mother has dreamed of building this
+                        business for many years and is now turning that dream into reality. As a software development
+                        student, I want to support her by creating a professional website that helps promote the
+                        business, reach more customers, and strengthen the brand.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Audience & Scenarios -->
+        <section id="target-audience" class="plan-section dark-bg">
+            <div class="section-badge">02</div>
+            <h2 class="section-title">Target Audience & Scenarios</h2>
+
+            <div class="audience-container">
+                <div class="audience-column">
+                    <h3>Primary Audience</h3>
+                    <p>Our segment target profile spans domestic and business clients alike:</p>
+                    <ul class="audience-list">
+                        <li><strong>Families:</strong> Looking for nutritious, easy-to-prepare, premium smoked proteins
+                            for dynamic meals.</li>
+                        <li><strong>Food Enthusiasts:</strong> Seeking unique artisanal flavors, traditional smoked
+                            techniques, and Colombian-inspired tastes.</li>
+                        <li><strong>Local Customers:</strong> Community members who support local, family-owned gourmet
+                            culinary startups.</li>
+                        <li><strong>B2B Buyers (Restaurants, Grocery stores, Distributors):</strong> Professional
+                            culinary buyers searching for authentic, high-volume smoked meats of consistent gourmet
+                            quality.</li>
+                    </ul>
+                </div>
+
+                <div class="scenarios-column">
+                    <h3>User Scenarios & Solutions</h3>
+                    <div class="scenario-accordion">
+                        <div class="scenario-item">
+                            <h4 class="scenario-question">1. Where can I purchase smoked products online and what
+                                products are available?</h4>
+                            <p class="scenario-answer"><strong>Solution:</strong> The future website will host a
+                                dedicated "Products" page featuring a dynamic catalog of our smoked products. Each item
+                                card will include clear pricing, description, and an "Add to Cart" or "Order Now"
+                                feature linked to local shopping preferences.</p>
+                        </div>
+
+                        <div class="scenario-item">
+                            <h4 class="scenario-question">2. How can I place a wholesale order for my restaurant or
+                                business?</h4>
+                            <p class="scenario-answer"><strong>Solution:</strong> A robust Wholesale Form will be
+                                embedded within the Contact page. It will allow business entities to input their
+                                business name, volume requirements, product interest, and scheduled frequency to
+                                generate a structured B2B inquiry directly to the administration.</p>
+                        </div>
+
+                        <div class="scenario-item">
+                            <h4 class="scenario-question">3. What makes Humo y Sabor different from other smoked food
+                                businesses?</h4>
+                            <p class="scenario-answer"><strong>Solution:</strong> The Home page will showcase a
+                                beautifully styled "Our Story" section outlining the brand's Colombian roots, artisanal
+                                smoking processes, and family dedication. Key visual badges will highlight "100%
+                                Artisanal" and "Traditional Wood Smoked".</p>
+                        </div>
+
+                        <div class="scenario-item">
+                            <h4 class="scenario-question">4. Where is the business located and how can I contact the
+                                owners?</h4>
+                            <p class="scenario-answer"><strong>Solution:</strong> The footer will contain instant
+                                contact details, while the "Contact" page will feature an embedded responsive map
+                                displaying our precise physical location, complete with interactive operating hours,
+                                telephone, email, and social media channels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Color Scheme -->
+        <section id="color-scheme" class="plan-section">
+            <div class="section-badge">03</div>
+            <h2 class="section-title">Color Scheme</h2>
+            <p class="section-intro">The palette represents a premium, gourmet dark aesthetic utilizing rich smoked
+                tones, clean cream backgrounds, sophisticated gold accents, and subtle, meaningful nods to Colombian
+                roots.</p>
+
+            <div class="color-palette-grid">
+                <!-- Swatch 1 -->
+                <div class="color-card">
+                    <div class="swatch" style="background-color: #121212;">
+                        <span class="hex-label dark-text">#121212</span>
+                    </div>
+                    <div class="color-details">
+                        <h3>Premium Black</h3>
+                        <p><strong>Purpose:</strong> Primary background and main text contrast canvas.</p>
+                        <p><strong>Future Use:</strong> Backgrounds, navigation headers, structural frames, and solid
+                            contrast elements.</p>
+                        <p><strong>Accessibility:</strong> Serves as the high-contrast backdrop for the Light Cream and
+                            Premium Gold typography, securing a contrast ratio well above the AAA threshold.</p>
+                    </div>
+                </div>
+
+                <!-- Swatch 2 -->
+                <div class="color-card">
+                    <div class="swatch" style="background-color: #5C2E1F;">
+                        <span class="hex-label light-text">#5C2E1F</span>
+                    </div>
+                    <div class="color-details">
+                        <h3>Smoked Wood Brown</h3>
+                        <p><strong>Purpose:</strong> Structural accents, secondary titles, and container borders.</p>
+                        <p><strong>Future Use:</strong> Card backdrops, hover borders, button outline actions, and
+                            decorative smoke overlays.</p>
+                        <p><strong>Accessibility:</strong> Combined exclusively with highly contrasted text (such as
+                            Warm and Light Cream) to keep reading simple, legible, and visual.</p>
+                    </div>
+                </div>
+
+                <!-- Swatch 3 -->
+                <div class="color-card">
+                    <div class="swatch" style="background-color: #D4A017;">
+                        <span class="hex-label dark-text">#D4A017</span>
+                    </div>
+                    <div class="color-details">
+                        <h3>Premium Gold</h3>
+                        <p><strong>Purpose:</strong> Highlights, key call-to-action details, borders, and main labels.
+                        </p>
+                        <p><strong>Future Use:</strong> Price tags, interactive icons, active link statuses, primary
+                            buttons, and title borders.</p>
+                        <p><strong>Accessibility:</strong> High visibility when used over dark elements. Ensures
+                            emphasis on elements without losing user visual tracking.</p>
+                    </div>
+                </div>
+
+                <!-- Swatch 4 -->
+                <div class="color-card">
+                    <div class="swatch" style="background-color: #F9EAC8;">
+                        <span class="hex-label dark-text">#F9EAC8</span>
+                    </div>
+                    <div class="color-details">
+                        <h3>Warm Cream</h3>
+                        <p><strong>Purpose:</strong> Main typography color and primary readable element surfaces.</p>
+                        <p><strong>Future Use:</strong> Paragraphs, list elements, cards, description sections, and
+                            navigation links.</p>
+                        <p><strong>Accessibility:</strong> Soft to the eyes while maintaining high legibility over
+                            #121212 and #5C2E1F, preventing eye strain.</p>
+                    </div>
+                </div>
+
+                <!-- Swatch 5 -->
+                <div class="color-card">
+                    <div class="swatch" style="background-color: #FDF8ED;">
+                        <span class="hex-label dark-text">#FDF8ED</span>
+                    </div>
+                    <div class="color-details">
+                        <h3>Light Cream</h3>
+                        <p><strong>Purpose:</strong> Highlights inside dark areas, content backgrounds in bright
+                            elements.</p>
+                        <p><strong>Future Use:</strong> Active focus elements, modal content backdrops, form text fields
+                            background.</p>
+                        <p><strong>Accessibility:</strong> Incredible contrast when rendering deep text. Easily reads
+                            against very dark backgrounds or holds black text with flawless clarity.</p>
+                    </div>
+                </div>
+
+                <!-- Swatch 6 (Colombian Red Accent) -->
+                <div class="color-card">
+                    <div class="swatch" style="background-color: #CA0F25;">
+                        <span class="hex-label light-text">#CA0F25</span>
+                    </div>
+                    <div class="color-details">
+                        <h3>Colombian Red</h3>
+                        <p><strong>Purpose:</strong> Strategic highlight accents evoking national roots and smoky heat.
+                        </p>
+                        <p><strong>Future Use:</strong> Promotional tags, special culinary badges, spicy flavor level
+                            indicators.</p>
+                        <p><strong>Accessibility:</strong> Kept as an accent indicator only. Never used for dense
+                            paragraphs to prevent color-blindness reading blocks.</p>
+                    </div>
+                </div>
+
+                <!-- Swatch 7 (Colombian Blue Accent) -->
+                <div class="color-card">
+                    <div class="swatch" style="background-color: #003893;">
+                        <span class="hex-label light-text">#003893</span>
+                    </div>
+                    <div class="color-details">
+                        <h3>Colombian Blue</h3>
+                        <p><strong>Purpose:</strong> Subtle visual branding anchor representing traditional security and
+                            heritage.</p>
+                        <p><strong>Future Use:</strong> Trust icons, dynamic shipping confirmations, and selective
+                            secondary visual markers.</p>
+                        <p><strong>Accessibility:</strong> Paired strictly with white/cream overlays. Kept to localized
+                            decorations to avoid distracting primary flows.</p>
+                    </div>
+                </div>
+
+                <!-- Swatch 8 (Colombian Yellow Accent) -->
+                <div class="color-card">
+                    <div class="swatch" style="background-color: #FCD116;">
+                        <span class="hex-label dark-text">#FCD116</span>
+                    </div>
+                    <div class="color-details">
+                        <h3>Colombian Yellow</h3>
+                        <p><strong>Purpose:</strong> Vibrant brand highlight color conveying warmth, brightness, and
+                            energy.</p>
+                        <p><strong>Future Use:</strong> Flash sales, special product alerts, rating star icons, and
+                            highlight badges.</p>
+                        <p><strong>Accessibility:</strong> Only rendered against deep black (#121212) or dark wood brown
+                            backdrops, keeping high contrast standards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography -->
+        <section id="typography" class="plan-section dark-bg">
+            <div class="section-badge">04</div>
+            <h2 class="section-title">Typography</h2>
+            <p class="section-intro">Selected Google Fonts establish a premium gourmet hierarchy that balances elegant
+                artisanal craftsmanship with sharp, highly legible modern UI patterns.</p>
+
+            <div class="typo-grid">
+                <div class="typo-fonts">
+                    <div class="font-preview">
+                        <h3>Cormorant Garamond</h3>
+                        <p class="serif-preview">AbCdEfGhIjKlMnOpQrStUvWxYz</p>
+                        <p class="font-desc"><strong>Headings Font:</strong> Elegant, classic, and sophisticated serif
+                            typography. Perfect for titles, blockquotes, and showcasing artisanal gourmet roots.</p>
+                    </div>
+                    <div class="font-preview">
+                        <h3>Inter</h3>
+                        <p class="sans-preview">AbCdEfGhIjKlMnOpQrStUvWxYz</p>
+                        <p class="font-desc"><strong>Body Font:</strong> Modern, clean, and highly readable geometric
+                            sans-serif. Ideal for dynamic data tables, descriptions, pricing tags, and navigation
+                            elements.</p>
+                    </div>
+                </div>
+
+                <div class="typo-displays">
+                    <h3>Display & Element Examples</h3>
+
+                    <div class="demo-box">
+                        <span class="demo-label">H1 Header Element</span>
+                        <h1 class="demo-h1">Humo y Sabor</h1>
+                    </div>
+
+                    <div class="demo-box">
+                        <span class="demo-label">H2 Section Title Element</span>
+                        <h2 class="demo-h2">Traditional Smoked Meats</h2>
+                    </div>
+
+                    <div class="demo-box">
+                        <span class="demo-label">H3 Component Header Element</span>
+                        <h3 class="demo-h3">Artisanal Smoked Chorizo</h3>
+                    </div>
+
+                    <div class="demo-box">
+                        <span class="demo-label">Paragraph Element (Inter Font)</span>
+                        <p class="demo-p">Our meats are hand-selected, seasoned with our signature family-secret spice
+                            blends, and smoked slowly over 12 hours using local wood to capture the rich, authentic, and
+                            unmatched smoke flavor profile.</p>
+                    </div>
+
+                    <div class="demo-box">
+                        <span class="demo-label">Button Element</span>
+                        <button class="demo-btn">Explore Our Menu</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Website Structure -->
+        <section id="architecture" class="plan-section">
+            <div class="section-badge">05</div>
+            <h2 class="section-title">Future Site Architecture</h2>
+            <p class="section-intro">A balanced sitemap planned to optimize consumer conversion, showcase family
+                business storytelling, and secure high B2B lead generation.</p>
+
+            <div class="architecture-grid">
+                <!-- Page 1 -->
+                <div class="arch-card">
+                    <div class="arch-num">Page 1</div>
+                    <h3>Home (index.html)</h3>
+                    <p class="arch-purpose"><strong>Purpose:</strong> Introduce the brand, hook first-time visitors, and
+                        summarize key offerings.</p>
+                    <p>Features dynamic highlights of our best-selling artisanal meats, quick-link navigation paths, an
+                        immersive "Our Story" family background teaser, customer testimonials, and a newsletter sign-up
+                        container.</p>
+                </div>
+
+                <!-- Page 2 -->
+                <div class="arch-card">
+                    <div class="arch-num">Page 2</div>
+                    <h3>Products (products.html)</h3>
+                    <p class="arch-purpose"><strong>Purpose:</strong> Present the full smoked catalog in an interactive,
+                        filterable interface.</p>
+                    <p>Provides dynamic categorizations (Beef, Pork, Chicken, Specialties) utilizing JavaScript filters,
+                        quick product detail modals, and a local-storage integrated "Favorite List" dashboard to
+                        personalize the user journey.</p>
+                </div>
+
+                <!-- Page 3 -->
+                <div class="arch-card">
+                    <div class="arch-num">Page 3</div>
+                    <h3>Contact / Wholesale (contact.html)</h3>
+                    <p class="arch-purpose"><strong>Purpose:</strong> Facilitate retail support and capture heavy volume
+                        B2B leads.</p>
+                    <p>Features a dual contact layout. One section accommodates standard customer inquiries, location
+                        details, and active operating hours, while the other features a detailed Wholesale Quote request
+                        form.</p>
+                </div>
+
+                <!-- Additional Page A -->
+                <div class="arch-card secondary">
+                    <div class="arch-num">Additional Page A</div>
+                    <h3>Form Action Page (thanks.html)</h3>
+                    <p class="arch-purpose"><strong>Purpose:</strong> Standard responsive validation page reinforcing
+                        professional client interactions.</p>
+                    <p>Greets the user dynamically when they submit a form, confirming message reception, explaining
+                        follow-up times, and suggesting popular products using elegant animations.</p>
+                </div>
+
+                <!-- Additional Page B -->
+                <div class="arch-card secondary">
+                    <div class="arch-num">Additional Page B</div>
+                    <h3>Attributions Page (attributions.html)</h3>
+                    <p class="arch-purpose"><strong>Purpose:</strong> Maintain structural transparency and credit
+                        intellectual property resources.</p>
+                    <p>Formally logs license files, vector elements, font families, photography references (e.g.,
+                        Unsplash, Freepik), and local open-source assets utilized during design production.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Functionality Plan -->
+        <section id="functionality" class="plan-section dark-bg">
+            <div class="section-badge">06</div>
+            <h2 class="section-title">Future Functionality Plan</h2>
+            <p class="section-intro">How the completed Humo y Sabor platform will satisfy all core and advanced
+                technical requirements for WDD 231 using professional, modern vanilla development.</p>
+
+            <div class="functionality-list">
+                <!-- Technical Core 1 -->
+                <div class="func-item">
+                    <div class="func-header">
+                        <span class="func-tag">Core Technical</span>
+                        <h3>Data Fetching & Async Workflow</h3>
+                    </div>
+                    <p>All catalog details will be managed in an independent, local JSON file. During client navigation,
+                        a JavaScript fetch operation utilizes structured <strong>async/await</strong> encapsulated
+                        inside clean <strong>try/catch</strong> error blocks. This guarantees a fast, modern catalog
+                        loading screen and solid offline fault-tolerance.</p>
+                </div>
+
+                <!-- Technical Core 2 -->
+                <div class="func-item">
+                    <div class="func-header">
+                        <span class="func-tag">Dynamic UI</span>
+                        <h3>Dynamic Content Render (15+ Items)</h3>
+                    </div>
+                    <p>A minimum of 15 unique, high-quality smoked products will populate the dynamic JSON structure.
+                        Handled properties include: Product Name, Category, Price, Description, and Image. Each visual
+                        card will be rendered programmatically in real-time, matching screen constraints without
+                        hardcoded HTML duplications.</p>
+                </div>
+
+                <!-- Technical Core 3 -->
+                <div class="func-item">
+                    <div class="func-header">
+                        <span class="func-tag">ES6 Standards</span>
+                        <h3>Array Processing & Template Literals</h3>
+                    </div>
+                    <p>The code architecture uses native ES6 features. Native <code>map()</code>, <code>filter()</code>,
+                        and <code>forEach()</code> array methods will organize real-time search queries and category
+                        filters. Custom cards will render cleanly through high-performance ES6 <strong>Template
+                            Literals</strong>, injecting accurate markup cleanly into targeted DOM hooks.</p>
+                </div>
+
+                <!-- Technical Core 4 -->
+                <div class="func-item">
+                    <div class="func-header">
+                        <span class="func-tag">Modularity</span>
+                        <h3>ES Modules & Clean Architecture</h3>
+                    </div>
+                    <p>JavaScript codebases will use structured ES modules to ensure clean code architecture.
+                        Responsibilities are split cleanly into multiple files, such as dynamic data files, storage
+                        functions, and rendering blocks. This keeps script development highly organized, scalable, and
+                        easy to maintain.</p>
+                </div>
+
+                <!-- Technical Core 5 -->
+                <div class="func-item">
+                    <div class="func-header">
+                        <span class="func-tag">Local Storage</span>
+                        <h3>User Preferences / Favorite Storage</h3>
+                    </div>
+                    <p>A Favorite Products selection or standard Shopping Preference dashboard will connect directly
+                        with <strong>Local Storage</strong>. Users can toggle preferences, saving choices that persist
+                        across sessions, allowing returning users to quickly view their favorite smoked items.</p>
+                </div>
+
+                <!-- Technical Core 6 -->
+                <div class="func-item">
+                    <div class="func-header">
+                        <span class="func-tag">DOM & Modals</span>
+                        <h3>Modal Dialog Detail Integration</h3>
+                    </div>
+                    <p>To keep the interface clean, clicking "Quick View" on a product card will open a responsive modal
+                        dialog containing detailed specifications and ingredients. The modal supports full keyboard
+                        interactions and dynamic close triggers to ensure built-in accessibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wireframes -->
+        <section id="wireframes" class="plan-section">
+            <div class="section-badge">07</div>
+            <h2 class="section-title">Future Project Wireframes</h2>
+            <p class="section-intro">Visual mock layouts designed with clean semantic borders to map out our future
+                production designs. This visualizes both standard mobile and spacious desktop grids.</p>
+
+            <div class="wireframes-grid">
+                <!-- Mobile Wireframe -->
+                <div class="wireframe-container">
+                    <h3>1. Mobile Wireframe Layout (Stacked Hierarchy)</h3>
+                    <div class="wireframe-box mobile">
+
+                        <div class="wf-block wf-header">
+                            <span>HEADER (Logo / Mobile Hamburger Menu)</span>
+                        </div>
+
+                        <div class="wf-block wf-hero">
+                            <span>HERO SECTION<br>(Promotional Header / Call to Action Button)</span>
+                        </div>
+
+                        <div class="wf-block wf-products">
+                            <span>FEATURED PRODUCTS SECTION<br>(Vertical Stack / Horizontal Swipe Swiper Cards)</span>
+                            <div class="wf-nested-grid mobile-nested">
+                                <div class="wf-block wf-sub">Product Card 1</div>
+                                <div class="wf-block wf-sub">Product Card 2</div>
+                            </div>
+                        </div>
+
+                        <div class="wf-block wf-about">
+                            <span>ABOUT THE BUSINESS SECTION<br>(Story details & Family roots summary)</span>
+                        </div>
+
+                        <div class="wf-block wf-wholesale">
+                            <span>WHOLESALE SECTION<br>(Brief pitch / Link button to B2B form)</span>
+                        </div>
+
+                        <div class="wf-block wf-contact">
+                            <span>CONTACT SECTION<br>(Direct contact paths & Embedded maps)</span>
+                        </div>
+
+                        <div class="wf-block wf-footer">
+                            <span>FOOTER<br>(Social anchors / Dynamic validation scripts)</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Desktop Wireframe -->
+                <div class="wireframe-container">
+                    <h3>2. Desktop Wireframe Layout (Spacious Multi-Column Grid)</h3>
+                    <div class="wireframe-box desktop">
+
+                        <div class="wf-block wf-header">
+                            <span>HEADER (Logo Left / Responsive Full Horizontal Nav Menu Right)</span>
+                        </div>
+
+                        <div class="wf-block wf-hero desktop-hero">
+                            <span>HERO SECTION (High-Res Smoked Backdrop / Text Centered Left / Secondary Visuals
+                                Right)</span>
+                        </div>
+
+                        <div class="wf-block wf-products">
+                            <span>FEATURED PRODUCTS SECTION (3-Column Desktop Grid Layout)</span>
+                            <div class="wf-nested-grid desktop-nested">
+                                <div class="wf-block wf-sub">Dynamic Card 1</div>
+                                <div class="wf-block wf-sub">Dynamic Card 2</div>
+                                <div class="wf-block wf-sub">Dynamic Card 3</div>
+                            </div>
+                        </div>
+
+                        <div class="wf-double-column">
+                            <div class="wf-block wf-about wf-half">
+                                <span>ABOUT THE BUSINESS<br>(Left Column: Family image overlay)</span>
+                            </div>
+                            <div class="wf-block wf-about wf-half">
+                                <span>OUR ARTISANAL PROCESS<br>(Right Column: Storyteller description)</span>
+                            </div>
+                        </div>
+
+                        <div class="wf-block wf-wholesale">
+                            <span>WHOLESALE SECTION (Wide banner detailing bulk shipping, lead times, and B2B pricing
+                                catalogs)</span>
+                        </div>
+
+                        <div class="wf-double-column">
+                            <div class="wf-block wf-contact wf-half">
+                                <span>CONTACT FORM / MAPS (Interactive Map Canvas)</span>
+                            </div>
+                            <div class="wf-block wf-contact wf-half">
+                                <span>CONNECT DETAILS (Direct Phone, Hours, Email Support)</span>
+                            </div>
+                        </div>
+
+                        <div class="wf-block wf-footer">
+                            <span>FOOTER (Quick Links Left / Fine Print Center / Social Media Connect Right)</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="siteplan-footer">
+        <div class="footer-container">
+            <p>&copy; <span id="current-year"></span> | Humo y Sabor Site Plan | Alicia Ortiz</p>
+            <p class="last-modified">Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/siteplan.js" defer></script>
+</body>
+
+</html>

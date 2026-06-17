@@ -1,0 +1,152 @@
+[
+    {
+        "id": "colombian-chorizo",
+        "name": "Smoked Colombian Chorizo",
+        "category": "Sausages",
+        "description": "Authentic artisan pork sausage cured with raw garlic, scallions, and traditional spices, slow-smoked over sweet hickory wood.",
+        "price": "$12.99",
+        "woodType": "Hickory",
+        "cureTime": "24 Hours",
+        "image": "../images/chorizo.webp"
+    },
+    {
+        "id": "butifarra-bites",
+        "name": "Smoked Butifarra Bites",
+        "category": "Sausages",
+        "description": "Traditional seasoned ground pork globes, cold-cured and hot-smoked with native oak logs for a distinct coastal bite.",
+        "price": "$11.50",
+        "woodType": "Native Oak",
+        "cureTime": "12 Hours",
+        "image": "../images/butifarra.webp"
+    },
+    {
+        "id": "morcilla-ahumada",
+        "name": "Artisanal Smoked Morcilla",
+        "category": "Sausages",
+        "description": "Delicate blood sausage prepared with jasmine rice, fresh herbs, and slow-roasted over mild applewood smoke.",
+        "price": "$13.25",
+        "woodType": "Applewood",
+        "cureTime": "8 Hours",
+        "image": "../images/morcilla.webp"
+    },
+    {
+        "id": "coffee-beef-ribs",
+        "name": "Coffee-Rubbed Beef Ribs",
+        "category": "Meats",
+        "description": "Premium beef short ribs crusted in custom Colombian espresso grinds, brown sugar, and slow-smoked for half a day.",
+        "price": "$24.99",
+        "woodType": "Hickory & Oak",
+        "cureTime": "36 Hours",
+        "image": "../images/beef.webp"
+    },
+    {
+        "id": "panela-pork-belly",
+        "name": "Panela-Glazed Pork Belly",
+        "category": "Meats",
+        "description": "Thick cuts of premium pork belly marinated in natural sugar cane juice (panela) and smoked to a mahogany bark.",
+        "price": "$18.50",
+        "woodType": "Cherrywood",
+        "cureTime": "24 Hours",
+        "image": "../images/panza.webp"
+    },
+    {
+        "id": "heritage-chicken",
+        "name": "Heritage Smoked Chicken",
+        "category": "Meats",
+        "description": "Whole free-range chicken wet-brined in dark artisan lager and local spices, hot-smoked to absolute tenderness.",
+        "price": "$16.99",
+        "woodType": "Pecan Wood",
+        "cureTime": "18 Hours",
+        "image": "../images/gallina.webp"
+    },
+    {
+        "id": "applewood-trout",
+        "name": "Applewood Smoked Trout",
+        "category": "Seafood",
+        "description": "Fresh mountain lake trout fillets, cured with lime zest and sea salt, gently smoked to preserve its clean profile.",
+        "price": "$15.99",
+        "woodType": "Applewood",
+        "cureTime": "12 Hours",
+        "image": "../images/trout.webp"
+    },
+    {
+        "id": "citrus-salmon",
+        "name": "Citrus-Cured Smoked Salmon",
+        "category": "Seafood",
+        "description": "Premium Atlantic salmon fillets bathed in citrus oil and orange essence, then cold-smoked over natural alderwood.",
+        "price": "$21.00",
+        "woodType": "Alderwood",
+        "cureTime": "6 Hours",
+        "image": "../images/salmon.webp"
+    },
+    {
+        "id": "smoked-sea-salt",
+        "name": "Smoked Sea Salt Crystals",
+        "category": "Pantry",
+        "description": "Coarse Pacific sea salt slow-roasted inside our main smokehouses to capture rich wood smoke aroma.",
+        "price": "$6.50",
+        "woodType": "White Oak",
+        "cureTime": "72 Hours",
+        "image": "../images/sal.webp"
+    },
+    {
+        "id": "smoked-aji-sauce",
+        "name": "Smoked Andean Aji Sauce",
+        "category": "Pantry",
+        "description": "Medium heat green peppers and scallions fire-roasted and emulsified with cold-pressed olive oils.",
+        "price": "$7.99",
+        "woodType": "Cherrywood",
+        "cureTime": "4 Hours",
+        "image": "../images/aji.webp"
+    },
+    {
+        "id": "smoked-queso",
+        "name": "Smoked Queso Campesino",
+        "category": "Pantry",
+        "description": "Traditional Colombian fresh cheese lightly surface-salted and smoked for a rich crust and buttery interior.",
+        "price": "$9.50",
+        "woodType": "Applewood",
+        "cureTime": "3 Hours",
+        "image": "../images/queso.webp"
+    },
+    {
+        "id": "smoked-chimichurri",
+        "name": "Smoked Chimichurri Rub",
+        "category": "Pantry",
+        "description": "Dry spice rub containing dehydrated parsley, garlic, smoked paprika, and coarse herbs.",
+        "price": "$5.99",
+        "woodType": "Oakwood",
+        "cureTime": "12 Hours",
+        "image": "../images/chimichurri.webp"
+    },
+    {
+        "id": "smoked-coffee-beans",
+        "name": "Smoked Colombian Coffee",
+        "category": "Pantry",
+        "description": "Unique single-origin dark roast coffee beans exposed briefly to sweet smoke notes during roasting.",
+        "price": "$14.00",
+        "woodType": "Espresso Oak",
+        "cureTime": "1 Hour",
+        "image": "../images/coffee.webp"
+    },
+    {
+        "id": "smokehouse-giftbox",
+        "name": "Traditional Smokehouse Box",
+        "category": "Bundles",
+        "description": "Curated selection containing chorizo, bacon, ribs, smoked salt, and a bottle of our signature dry rub.",
+        "price": "$45.00",
+        "woodType": "Various Woods",
+        "cureTime": "Mixed Cures",
+        "image": "../images/box.webp"
+    },
+    {
+        "id": "sampler-pack",
+        "name": "Colombian Sampler Pack",
+        "category": "Bundles",
+        "description": "Taste the complete standard selection with mini portions of Colombian chorizo, morcilla, and local smoked cheese.",
+        "price": "$32.00",
+        "woodType": "Various Woods",
+        "cureTime": "Mixed Cures",
+        "image": "../images/pack.webp"
+    }
+]

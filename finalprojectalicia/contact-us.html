@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Our Family Smokehouse | Humo y Sabor</title>
+    <meta name="author" content="Alicia Ortiz">
+    <meta name="description"
+        content="Reach out to Humo y Sabor for general inquiries, pre-orders, custom curing, and premium wholesale smoked product partnerships.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://humoysabor.com/contact-us.html">
+    <meta property="og:title" content="Contact Our Family Smokehouse | Humo y Sabor">
+    <meta property="og:description" content="Let's bring custom smoked family tradition to your table or business.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- Google Fonts Preconnect and Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+    <script type="module" src="scripts/main.js" defer></script>
+
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" aria-label="Humo y Sabor Homepage">
+                    <span class="brand-name">Humo y Sabor</span>
+                    <span class="brand-tagline">Tradición Ahumada</span>
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation"
+                aria-label="Toggle navigation menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <nav id="primary-navigation" class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Contact Hero Section -->
+        <section class="contact-hero-section" aria-label="Contact Section Introduction">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content-wrapper">
+                <span class="hero-tag animate-on-scroll">Get In Touch</span>
+                <h1 class="hero-headline animate-on-scroll">Connect With Humo y Sabor</h1>
+                <p class="hero-subheadline animate-on-scroll">
+                    Questions about our processes, customized party orders, or wholesale? Send us a message today.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Info & Form Block -->
+        <section class="contact-body-section" aria-labelledby="form-heading">
+            <div class="container contact-grid">
+                <!-- Column 1: Info & Hours -->
+                <div class="contact-details animate-on-scroll">
+                    <h2 id="form-heading" class="accent-title">Family Smokehouse Headquarters</h2>
+                    <p class="contact-intro">
+                        We operate an artisanal workshop built on rigorous food security standards. While our commercial
+                        production is closed to drop-in public retail, we gladly arrange scheduled curb-side pickups and
+                        regional deliveries.
+                    </p>
+
+                    <div class="info-card">
+                        <h3>Direct Contact</h3>
+                        <p><strong>Phone:</strong> <a href="tel:+18005553423">+1 (800) 555-3423</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:orders@humoysabor.com">orders@humoysabor.com</a></p>
+                        <p><strong>Main Address:</strong> 42 Smokewood Lane, Artisan Hills, USA</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Operating & Delivery Hours</h3>
+                        <ul class="hours-list">
+                            <li><span>Monday – Friday:</span> <span>8:00 AM – 6:00 PM</span></li>
+                            <li><span>Saturday:</span> <span>9:00 AM – 4:00 PM (Pickups Only)</span></li>
+                            <li><span>Sunday:</span> <span>Closed (Family Smokehouse Day)</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 2: Form -->
+                <div class="contact-form-container animate-on-scroll">
+                    <h2 class="form-title">Send Us a Message</h2>
+                    <p class="form-instructions">All fields are required. We usually reply within one business day.</p>
+
+                    <form id="smokehouse-contact-form" class="custom-form" novalidate>
+                        <!-- Form Success Message Placeholder -->
+                        <div id="form-success-alert" class="alert-box alert-success" style="display: none;"
+                            role="alert"></div>
+                        <!-- Form Error Message Placeholder -->
+                        <div id="form-error-alert" class="alert-box alert-error" style="display: none;" role="alert">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-name">Full Name</label>
+                            <input type="text" id="user-name" name="name" required placeholder="Juan Valdéz"
+                                minlength="3">
+                            <span class="error-message" id="name-error" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-email">Email Address</label>
+                            <input type="email" id="user-email" name="email" required placeholder="juan@valdez.com">
+                            <span class="error-message" id="email-error" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-phone">Phone Number</label>
+                            <input type="tel" id="user-phone" name="phone" required placeholder="555-123-4567"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{10}">
+                            <span class="error-message" id="phone-error" aria-live="polite">Please enter a valid
+                                10-digit number.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-message">Message Details</label>
+                            <textarea id="user-message" name="message" rows="5" required
+                                placeholder="Tell us about your culinary needs or inquiry..."></textarea>
+                            <span class="error-message" id="message-error" aria-live="polite"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">Submit Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wholesale Inquiry Info Section -->
+        <section id="wholesale-inquiry" class="wholesale-inquiry-section" aria-labelledby="wholesale-inquiry-heading">
+            <div class="container animate-on-scroll">
+                <div class="wholesale-grid">
+                    <div class="wholesale-text">
+                        <h2 id="wholesale-inquiry-heading">Wholesale Partnership & Distribution</h2>
+                        <p>
+                            Are you interested in introducing Humo y Sabor premium products into your catalog or
+                            restaurant kitchen? We accommodate bulk requests under strict temperature-controlled storage
+                            and logistics arrangements.
+                        </p>
+                        <p>
+                            In your contact form submission, please specify "Wholesale" within your message details or
+                            directly email our accounts team at <a
+                                href="mailto:wholesale@humoysabor.com">wholesale@humoysabor.com</a> with your business
+                            registration details and projected monthly volumes.
+                        </p>
+                    </div>
+                    <div class="wholesale-graphics" aria-hidden="true">
+                        <div class="graphic-badge">
+                            <span>Authentic Colombian Origin Certified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Embedded Map Section -->
+        <section class="map-section" aria-label="Smokehouse Location Map">
+            <div class="container animate-on-scroll">
+                <div class="map-placeholder">
+                    <div class="map-overlay-card">
+                        <h3>Our Smokehouse Workshop</h3>
+                        <p>42 Smokewood Lane, Artisan Hills, USA</p>
+                        <p class="map-desc">Located in the foothills to leverage dry wood conditions for curing.</p>
+                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-secondary btn-small">Get Directions</a>
+                    </div>
+                    <div class="map-vector-bg"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <p class="footer-logo">Humo y Sabor</p>
+                <p class="footer-tagline">Premium Colombian Artisanal Smokehouse.</p>
+                <p class="author-attribution">WDD 231 Course Project designed by Alicia Ortiz.</p>
+            </div>
+
+            <div class="footer-nav">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:info@humoysabor.com">info@humoysabor.com</a></p>
+                <p>Phone: <a href="tel:+18005553423">+1 (800) 555-3423</a></p>
+                <p>Location: Artisanal Smokehouse Workshop, USA</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="current-year"></span> Humo y Sabor. All rights reserved. BYU-Idaho Student Project.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

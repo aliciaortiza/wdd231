@@ -1,0 +1,247 @@
+@media screen and (min-width: 768px) {
+
+    /* Scales the base typographic scale to increase readability and presence on larger screen sizes */
+    html {
+        font-size: 30px;
+    }
+
+    .nav-toggle {
+        display: none;
+        /* Hide hamburger */
+    }
+
+    .main-nav {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        padding: 0;
+        box-shadow: none;
+        overflow: visible;
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .main-nav a {
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+    }
+
+
+    /* Hero Section scaling */
+    .plan-hero {
+        padding: 7rem 2.5rem;
+    }
+
+    .plan-hero h2 {
+        font-size: 3.5rem;
+    }
+
+    /* Project Info Grid configuration */
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .info-card.full-width {
+        grid-column: span 2;
+    }
+
+    /* Audience & Scenarios layout */
+    .audience-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .audience-column,
+    .scenarios-column {
+        flex: 1;
+    }
+
+    /* Color Palette Card formatting */
+    .color-palette-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .color-card {
+        flex-direction: row;
+        min-height: 180px;
+    }
+
+    .swatch {
+        flex: 0 0 160px;
+        height: auto;
+    }
+
+    .color-details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.5rem;
+    }
+
+    /* Typography block arrangements */
+    .typo-grid {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    .typo-fonts {
+        flex: 0 0 42%;
+    }
+
+    .typo-displays {
+        flex: 0 0 53%;
+    }
+
+    /* Sitemap Cards mapping */
+    .architecture-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .arch-card.secondary {
+        grid-column: span 1;
+    }
+
+    /* Future Functionality lists */
+    .functionality-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* Wireframe visual spacing */
+    .wireframes-grid {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .wireframe-container {
+        flex: 1;
+    }
+
+    .wireframe-box.desktop {
+        max-width: 100%;
+    }
+
+    .desktop-hero {
+        padding: 40px 10px;
+    }
+
+    .wf-nested-grid.desktop-nested {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wf-double-column {
+        display: flex;
+        gap: 12px;
+    }
+
+    .wf-half {
+        flex: 1;
+    }
+
+    /* Footer distribution */
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .last-modified {
+        margin-top: 0;
+    }
+}
+
+/* Media Query for Large & High Resolution Displays (1200px+) */
+@media screen and (min-width: 1200px) {
+
+    /* Scales the base font system to 18px so visual text components render elegantly without losing proportions */
+    html {
+        font-size: 1.5rem;
+    }
+
+    :root {
+        --header-height: 90px;
+    }
+
+    /* Expanding spatial paddings to balance widescreen displays and avoid extreme blank margins */
+    .plan-hero {
+        padding: 9rem 4rem;
+    }
+
+    .plan-hero h2 {
+        font-size: 4rem;
+    }
+
+    .plan-section {
+        padding: 6.5rem 4rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .section-intro {
+        font-size: 1.2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    /* Scaling nested content systems */
+    .info-grid {
+        gap: 3.5rem;
+    }
+
+    .info-card {
+        padding: 2.5rem;
+    }
+
+    .color-palette-grid {
+        gap: 3rem;
+    }
+
+    .color-card {
+        min-height: 200px;
+    }
+
+    .swatch {
+        flex: 0 0 180px;
+    }
+
+    .architecture-grid {
+        gap: 2.5rem;
+    }
+
+    .functionality-list {
+        gap: 2.5rem;
+    }
+
+    .wireframes-grid {
+        gap: 4rem;
+    }
+}
+
+/* Media Query for Ultra-Wide Monitors (1600px+) */
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: 2rem;
+        /* Seamless fluid scaling on extremely large displays */
+    }
+
+    .plan-section {
+        max-width: 80%;
+        padding: 7.5rem 5rem;
+    }
+}
