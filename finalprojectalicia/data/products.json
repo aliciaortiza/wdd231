@@ -7,7 +7,7 @@
         "price": "$12.99",
         "woodType": "Hickory",
         "cureTime": "24 Hours",
-        "image": "../images/chorizo.webp"
+        "image": "images/chorizo.webp"
     },
     {
         "id": "butifarra-bites",
@@ -17,7 +17,7 @@
         "price": "$11.50",
         "woodType": "Native Oak",
         "cureTime": "12 Hours",
-        "image": "../images/butifarra.webp"
+        "image": "images/butifarra.webp"
     },
     {
         "id": "morcilla-ahumada",
@@ -27,7 +27,7 @@
         "price": "$13.25",
         "woodType": "Applewood",
         "cureTime": "8 Hours",
-        "image": "../images/morcilla.webp"
+        "image": "images/morcilla.webp"
     },
     {
         "id": "coffee-beef-ribs",
@@ -37,7 +37,7 @@
         "price": "$24.99",
         "woodType": "Hickory & Oak",
         "cureTime": "36 Hours",
-        "image": "../images/beef.webp"
+        "image": "images/beef.webp"
     },
     {
         "id": "panela-pork-belly",
@@ -47,7 +47,7 @@
         "price": "$18.50",
         "woodType": "Cherrywood",
         "cureTime": "24 Hours",
-        "image": "../images/panza.webp"
+        "image": "images/panza.webp"
     },
     {
         "id": "heritage-chicken",
@@ -57,7 +57,7 @@
         "price": "$16.99",
         "woodType": "Pecan Wood",
         "cureTime": "18 Hours",
-        "image": "../images/gallina.webp"
+        "image": "images/gallina.webp"
     },
     {
         "id": "applewood-trout",
@@ -67,7 +67,7 @@
         "price": "$15.99",
         "woodType": "Applewood",
         "cureTime": "12 Hours",
-        "image": "../images/trout.webp"
+        "image": "images/trout.webp"
     },
     {
         "id": "citrus-salmon",
@@ -77,7 +77,7 @@
         "price": "$21.00",
         "woodType": "Alderwood",
         "cureTime": "6 Hours",
-        "image": "../images/salmon.webp"
+        "image": "images/salmon.webp"
     },
     {
         "id": "smoked-sea-salt",
@@ -87,7 +87,7 @@
         "price": "$6.50",
         "woodType": "White Oak",
         "cureTime": "72 Hours",
-        "image": "../images/sal.webp"
+        "image": "images/sal.webp"
     },
     {
         "id": "smoked-aji-sauce",
@@ -97,7 +97,7 @@
         "price": "$7.99",
         "woodType": "Cherrywood",
         "cureTime": "4 Hours",
-        "image": "../images/aji.webp"
+        "image": "images/aji.webp"
     },
     {
         "id": "smoked-queso",
@@ -107,7 +107,7 @@
         "price": "$9.50",
         "woodType": "Applewood",
         "cureTime": "3 Hours",
-        "image": "../images/queso.webp"
+        "image": "images/queso.webp"
     },
     {
         "id": "smoked-chimichurri",
@@ -117,7 +117,7 @@
         "price": "$5.99",
         "woodType": "Oakwood",
         "cureTime": "12 Hours",
-        "image": "../images/chimichurri.webp"
+        "image": "images/chimichurri.webp"
     },
     {
         "id": "smoked-coffee-beans",
@@ -127,17 +127,17 @@
         "price": "$14.00",
         "woodType": "Espresso Oak",
         "cureTime": "1 Hour",
-        "image": "../images/coffee.webp"
+        "image": "images/coffee.webp"
     },
     {
         "id": "smokehouse-giftbox",
         "name": "Traditional Smokehouse Box",
         "category": "Bundles",
-        "description": "Curated selection containing chorizo, bacon, ribs, smoked salt, and a bottle of our signature dry rub.",
+        "description": "Curated selection containing chorizo, bacon, ribs, smoked salt, and a bottle of our signature smoked aji.",
         "price": "$45.00",
         "woodType": "Various Woods",
         "cureTime": "Mixed Cures",
-        "image": "../images/box.webp"
+        "image": "images/box.webp"
     },
     {
         "id": "sampler-pack",
@@ -147,6 +147,6 @@
         "price": "$32.00",
         "woodType": "Various Woods",
         "cureTime": "Mixed Cures",
-        "image": "../images/pack.webp"
+        "image": "images/pack.webp"
     }
 ]
