@@ -244,7 +244,7 @@ img {
     text-align: center;
 }
 
-.nav-link {
+.hs-nav-link {
     font-family: var(--font-body);
     font-size: 1.4rem;
     color: var(--light-cream);
@@ -252,8 +252,8 @@ img {
     letter-spacing: 1px;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.hs-nav-link:hover,
+.hs-nav-link.active {
     color: var(--premium-gold);
     border-bottom: 2px solid var(--premium-gold);
     padding-bottom: 4px;
@@ -274,24 +274,24 @@ img {
     font-size: 0.85rem;
 }
 
-.btn-primary {
+.hs-btn-primary {
     background-color: var(--premium-gold);
     color: var(--primary-black);
     border: 1px solid var(--premium-gold);
 }
 
-.btn-primary:hover {
+.hs-btn-primary:hover {
     background-color: transparent;
     color: var(--premium-gold);
 }
 
-.btn-secondary {
+.hs-btn-secondary {
     background-color: transparent;
     color: var(--light-cream);
     border: 1px solid var(--smoked-wood);
 }
 
-.btn-secondary:hover {
+.hs-btn-secondary:hover {
     background-color: var(--smoked-wood);
     color: var(--light-cream);
 }
@@ -1014,7 +1014,7 @@ summary::after {
     margin-bottom: var(--space-md);
 }
 
-.custom-form .form-group {
+.custom-form .hs-form-group {
     margin-bottom: var(--space-md);
     display: flex;
     flex-direction: column;

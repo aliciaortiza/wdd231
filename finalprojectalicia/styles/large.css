@@ -39,7 +39,7 @@
         gap: var(--space-md);
     }
 
-    .nav-link {
+    .hs-nav-link {
         font-size: 1rem;
         font-weight: 500;
     }

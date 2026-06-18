@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // Close navigation menu when users select single item anchor links
-            const navLinks = document.querySelectorAll('.nav-link');
+            const navLinks = document.querySelectorAll('.hs-nav-link');
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     menuToggle.classList.remove('active');
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Active Navigation Item Highlighting
     const highlightActiveLink = () => {
-        const navLinks = document.querySelectorAll('.nav-link');
+        const navLinks = document.querySelectorAll('.hs-nav-link');
         const currentURL = window.location.pathname;
 
         navLinks.forEach(link => {

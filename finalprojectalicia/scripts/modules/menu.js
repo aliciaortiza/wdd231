@@ -11,7 +11,7 @@ export function initMobileNavigation() {
             navMenu.classList.toggle('active');
         });
 
-        const navLinks = document.querySelectorAll('.nav-link');
+        const navLinks = document.querySelectorAll('.hs-nav-link');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 menuToggle.classList.remove('active');
