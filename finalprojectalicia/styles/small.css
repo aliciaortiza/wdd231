@@ -1251,3 +1251,34 @@ summary::after {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Estilo del enlace de presentación del proyecto */
+.video-presentation-link {
+    margin-top: var(--space-sm);
+}
+
+.video-presentation-link a {
+    color: var(--premium-gold);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.5rem 1rem;
+    border: 1px dashed rgba(212, 160, 23, 0.3);
+    transition: var(--transition-smooth);
+}
+
+.video-presentation-link a:hover {
+    color: var(--light-cream);
+    border-color: var(--light-cream);
+    background-color: rgba(92, 46, 31, 0.2);
+}
+
+.video-presentation-link .video-icon {
+    font-size: 0.7rem;
+    color: var(--colombian-yellow);
+}
