@@ -532,7 +532,7 @@ body {
     color: var(--warm-cream);
 }
 
-.demo-btn {
+.demo-boton {
     background-color: var(--premium-gold);
     color: var(--primary-black);
     border: none;
@@ -546,7 +546,7 @@ body {
     transition: background-color var(--transition-speed);
 }
 
-.demo-btn:hover {
+.demo-boton:hover {
     background-color: var(--light-cream);
 }
 

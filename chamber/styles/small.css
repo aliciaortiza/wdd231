@@ -64,9 +64,9 @@ main {
 
 /* Interactivity Defaults */
 button,
-.submit-btn,
+.submit-boton,
 .info-link,
-.home-btn,
+.home-boton,
 .view-toggle button {
     cursor: pointer;
     transition: all 0.3s ease;
@@ -484,7 +484,7 @@ footer {
     min-height: 100px;
 }
 
-.submit-btn {
+.submit-boton {
     background-color: var(--color-secondary);
     color: var(--color-special-background);
     padding: 1rem;
@@ -493,7 +493,7 @@ footer {
     font-weight: bold;
 }
 
-.submit-btn:hover {
+.submit-boton:hover {
     background-color: var(--color-primary);
 }
 
@@ -606,7 +606,7 @@ footer {
     border-bottom: 1px solid var(--color-special-background);
 }
 
-.modal-content .close-btn {
+.modal-content .close-boton {
     background-color: var(--color-accent);
     color: var(--color-special-background);
     padding: 0.6rem 1.5rem;
@@ -614,7 +614,7 @@ footer {
     font-weight: bold;
 }
 
-.modal-content .close-btn:hover {
+.modal-content .close-boton:hover {
     background-color: var(--color-primary);
 }
 
@@ -642,7 +642,7 @@ footer {
     font-size: 1rem;
 }
 
-.home-btn {
+.home-boton {
     display: inline-block;
     background-color: var(--color-secondary);
     color: var(--color-special-background);
@@ -652,7 +652,7 @@ footer {
     font-weight: bold;
 }
 
-.home-btn:hover {
+.home-boton:hover {
     background-color: var(--color-primary);
 }
 
@@ -774,7 +774,7 @@ footer {
     color: var(--color-text);
 }
 
-.learn-more-btn {
+.learn-more-boton {
     background-color: var(--color-accent);
     color: var(--color-special-background);
     padding: 0.6rem 1.2rem;
@@ -784,6 +784,6 @@ footer {
     margin-top: auto;
 }
 
-.learn-more-btn:hover {
+.learn-more-boton:hover {
     background-color: var(--color-primary);
 }

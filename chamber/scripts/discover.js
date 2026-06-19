@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </figure>
                 <address class="interest-address">${item.address}</address>
                 <p class="interest-desc">${item.description}</p>
-                <button type="button" class="learn-more-btn">Learn More</button>
+                <button type="button" class="learn-more-boton">Learn More</button>
             `;
             gridContainer.appendChild(card);
         });

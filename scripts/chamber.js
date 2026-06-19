@@ -128,16 +128,16 @@ function displayCourses(filteredCourses) {
 displayCourses(courses);
 
 // botones
-document.getElementById('all-btn').addEventListener('click', () => {
+document.getElementById('all-boton').addEventListener('click', () => {
     displayCourses(courses);
 });
 
-document.getElementById('cse-btn').addEventListener('click', () => {
+document.getElementById('cse-boton').addEventListener('click', () => {
     const cseCourses = courses.filter(c => c.subject === 'CSE');
     displayCourses(cseCourses);
 });
 
-document.getElementById('wdd-btn').addEventListener('click', () => {
+document.getElementById('wdd-boton').addEventListener('click', () => {
     const wddCourses = courses.filter(c => c.subject === 'WDD');
     displayCourses(wddCourses);
 });

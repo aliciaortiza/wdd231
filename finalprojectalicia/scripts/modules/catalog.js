@@ -56,7 +56,7 @@ function renderProducts(productsList) {
         <div class="card-img-wrapper">
           <img src="${product.image}" alt="Culinary smoked product image detailing ${product.name}" loading="lazy" width="400" height="250">
           <span class="card-category-badge">${product.category}</span>
-          <button class="favorite-btn ${favClass}" data-id="${product.id}" aria-label="Add ${product.name} to favorites" title="Favorite">
+          <button class="favorite-boton ${favClass}" data-id="${product.id}" aria-label="Add ${product.name} to favorites" title="Favorite">
             &#9829;
           </button>
         </div>
@@ -64,7 +64,7 @@ function renderProducts(productsList) {
           <h3>${product.name}</h3>
           <p class="card-price">${product.price}</p>
           <p class="card-desc">${product.description}</p>
-          <button class="card-details-btn" data-id="${product.id}">View Details</button>
+          <button class="card-details-boton" data-id="${product.id}">View Details</button>
         </div>
       </article>
     `;
@@ -76,26 +76,26 @@ function renderProducts(productsList) {
 
 function attachCardEvents() {
     // Favorite Toggles Event delegation loop
-    const favButtons = document.querySelectorAll('.favorite-btn');
-    favButtons.forEach(btn => {
-        btn.addEventListener('click', (e) => {
+    const favButtons = document.querySelectorAll('.favorite-boton');
+    favButtons.forEach(boton => {
+        boton.addEventListener('click', (e) => {
             e.stopPropagation();
-            const productId = btn.getAttribute('data-id');
+            const productId = boton.getAttribute('data-id');
             const isFav = toggleFavorite(productId);
 
             if (isFav) {
-                btn.classList.add('favorited');
+                boton.classList.add('favorited');
             } else {
-                btn.classList.remove('favorited');
+                boton.classList.remove('favorited');
             }
         });
     });
 
     // Modal display event handlers
-    const detailButtons = document.querySelectorAll('.card-details-btn');
-    detailButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const productId = btn.getAttribute('data-id');
+    const detailButtons = document.querySelectorAll('.card-details-boton');
+    detailButtons.forEach(boton => {
+        boton.addEventListener('click', () => {
+            const productId = boton.getAttribute('data-id');
             const product = allProducts.find(p => p.id === productId);
             if (product) {
                 openProductModal(product);
@@ -105,15 +105,15 @@ function attachCardEvents() {
 }
 
 function setupCategoryFilters() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
+    const filterButtons = document.querySelectorAll('.filter-boton');
 
-    filterButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
+    filterButtons.forEach(boton => {
+        boton.addEventListener('click', () => {
             // Manage active visual state
             filterButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+            boton.classList.add('active');
 
-            const selectedCategory = btn.getAttribute('data-category');
+            const selectedCategory = boton.getAttribute('data-category');
 
             if (selectedCategory === 'all') {
                 renderProducts(allProducts);

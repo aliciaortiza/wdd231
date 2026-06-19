@@ -1,11 +1,11 @@
 /* Modal Module - Accessible HTML5 Modal dialog controller*/
 export function initModalControllers() {
     const modal = document.getElementById('product-detail-modal');
-    const closeBtn = document.getElementById('close-modal-btn');
+    const closeboton = document.getElementById('close-modal-boton');
 
-    if (modal && closeBtn) {
+    if (modal && closeboton) {
         // Accessible event tracking
-        closeBtn.addEventListener('click', () => {
+        closeboton.addEventListener('click', () => {
             modal.close();
         });
 

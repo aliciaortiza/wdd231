@@ -66,17 +66,17 @@ function displayMembers(members) {
     });
 }
 
-const gridBtn = document.getElementById('gridBtn');
-const listBtn = document.getElementById('listBtn');
+const gridboton = document.getElementById('gridboton');
+const listboton = document.getElementById('listboton');
 const membersContainer = document.getElementById('membersContainer');
 
-if (gridBtn && listBtn && membersContainer) {
-    gridBtn.addEventListener('click', () => {
+if (gridboton && listboton && membersContainer) {
+    gridboton.addEventListener('click', () => {
         membersContainer.classList.add('grid-view');
         membersContainer.classList.remove('list-view');
     });
 
-    listBtn.addEventListener('click', () => {
+    listboton.addEventListener('click', () => {
         membersContainer.classList.add('list-view');
         membersContainer.classList.remove('grid-view');
     });
@@ -203,10 +203,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Close button handler for dialogs
-    const closeBtns = document.querySelectorAll(".close-btn");
-    closeBtns.forEach(btn => {
-        btn.addEventListener("click", () => {
-            const modal = btn.closest("dialog");
+    const closebotons = document.querySelectorAll(".close-boton");
+    closebotons.forEach(boton => {
+        boton.addEventListener("click", () => {
+            const modal = boton.closest("dialog");
             if (modal) {
                 modal.close();
             }

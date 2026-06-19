@@ -99,38 +99,39 @@
                     <input type="text" id="fname" name="fname" required autocomplete="given-name"
                         title="Please enter your first name">
                 </label>
-    
+
                 <label class="form-label" title="Last Name field">
                     <span>Last Name*</span>
                     <input type="text" id="lname" name="lname" required autocomplete="family-name"
                         title="Please enter your last name">
                 </label>
-   
+
                 <label class="form-label" title="Organizational Title field">
                     <span>Organizational Title</span>
                     <input type="text" id="org-title" name="org-title" autocomplete="organization-title"
-                        pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters. Only letters, hyphens, and spaces allowed."
+                        pattern="[A-Za-z\s-]{7,}"
+                        title="Minimum 7 characters. Only letters, hyphens, and spaces allowed."
                         placeholder="e.g., Director of Marketing">
                 </label>
-    
+
                 <label class="form-label" title="Email Address field">
                     <span>Email Address*</span>
                     <input type="email" id="email" name="email" required autocomplete="email"
                         placeholder="e.g., username@domain.com" title="Please enter a valid email address">
                 </label>
-    
+
                 <label class="form-label" title="Mobile Phone Number field">
                     <span>Mobile Phone Number*</span>
                     <input type="tel" id="phone" name="phone" required autocomplete="tel"
                         title="Please enter your mobile phone number">
                 </label>
-    
+
                 <label class="form-label" title="Business or Organization Name field">
                     <span>Business/Organization Name*</span>
                     <input type="text" id="org-name" name="org-name" required autocomplete="organization"
                         title="Please enter your organization's name">
                 </label>
-    
+
                 <label class="form-label" title="Membership Level Selection">
                     <span>Membership Level*</span>
                     <select id="membership" name="membership" required title="Please select a membership level">
@@ -141,19 +142,19 @@
                         <option value="gold">Gold Membership</option>
                     </select>
                 </label>
-    
+
                 <label class="form-label" title="Business Description field">
                     <span>Business/Organization Description</span>
                     <textarea id="description" name="description"
                         title="Provide a brief description of your business or organization"></textarea>
                 </label>
-    
+
                 <!-- Hidden Timestamp Field -->
                 <input type="hidden" id="timestamp" name="timestamp">
-    
-                <button type="submit" class="submit-btn">Submit Application</button>
+
+                <button type="submit" class="submit-boton">Submit Application</button>
             </form>
-    
+
             <!-- Membership Cards Section -->
             <div class="membership-cards">
                 <div class="card np-card animate-card">
@@ -174,22 +175,23 @@
                 </div>
             </div>
         </div>
-    
+
         <!-- Modals Section -->
         <dialog id="np-modal" class="membership-modal">
             <div class="modal-content">
                 <h2>Non-Profit Membership</h2>
-                <p>Designed for registered non-profit organizations looking to establish a presence in the local business
+                <p>Designed for registered non-profit organizations looking to establish a presence in the local
+                    business
                     community.</p>
                 <ul>
                     <li><strong>Cost:</strong> Free ($0/year)</li>
                     <li>Directory listing</li>
                     <li>Access to training and general networking events</li>
                 </ul>
-                <button type="button" class="close-btn">Close</button>
+                <button type="button" class="close-boton">Close</button>
             </div>
         </dialog>
-    
+
         <dialog id="bronze-modal" class="membership-modal">
             <div class="modal-content">
                 <h2>Bronze Membership</h2>
@@ -200,10 +202,10 @@
                     <li>Discounted rates for training events</li>
                     <li>1 annual spotlight mention on social media</li>
                 </ul>
-                <button type="button" class="close-btn">Close</button>
+                <button type="button" class="close-boton">Close</button>
             </div>
         </dialog>
-    
+
         <dialog id="silver-modal" class="membership-modal">
             <div class="modal-content">
                 <h2>Silver Membership</h2>
@@ -215,10 +217,10 @@
                     <li>2 social media spotlight mentions</li>
                     <li>Logo displayed on chamber event slides</li>
                 </ul>
-                <button type="button" class="close-btn">Close</button>
+                <button type="button" class="close-boton">Close</button>
             </div>
         </dialog>
-    
+
         <dialog id="gold-modal" class="membership-modal">
             <div class="modal-content">
                 <h2>Gold Membership</h2>
@@ -230,7 +232,7 @@
                     <li>Featured monthly newsletter article</li>
                     <li>VIP table at the annual gala</li>
                 </ul>
-                <button type="button" class="close-btn">Close</button>
+                <button type="button" class="close-boton">Close</button>
             </div>
         </dialog>
     </main>
@@ -264,4 +266,5 @@
         </div>
     </footer>
 </body>
+
 </html>

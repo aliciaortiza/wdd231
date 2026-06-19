@@ -264,7 +264,7 @@ img {
 }
 
 /* Premium Buttons */
-.btn {
+.boton {
     display: inline-block;
     font-family: var(--font-body);
     font-weight: 600;
@@ -278,24 +278,24 @@ img {
     font-size: 0.85rem;
 }
 
-.hs-btn-primary {
+.hs-boton-primary {
     background-color: var(--premium-gold);
     color: var(--primary-black);
     border: 1px solid var(--premium-gold);
 }
 
-.hs-btn-primary:hover {
+.hs-boton-primary:hover {
     background-color: transparent;
     color: var(--premium-gold);
 }
 
-.hs-btn-secondary {
+.hs-boton-secondary {
     background-color: transparent;
     color: var(--light-cream);
     border: 1px solid var(--smoked-wood);
 }
 
-.hs-btn-secondary:hover {
+.hs-boton-secondary:hover {
     background-color: var(--smoked-wood);
     color: var(--light-cream);
 }
@@ -874,7 +874,7 @@ summary::after {
     display: block;
 }
 
-.btn-submit {
+.boton-submit {
     width: 100%;
 }
 

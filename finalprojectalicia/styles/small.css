@@ -260,7 +260,7 @@ img {
 }
 
 /* Premium Buttons */
-.btn {
+.boton {
     display: inline-block;
     font-family: var(--font-body);
     font-weight: 600;
@@ -274,24 +274,24 @@ img {
     font-size: 0.85rem;
 }
 
-.hs-btn-primary {
+.hs-boton-primary {
     background-color: var(--premium-gold);
     color: var(--primary-black);
     border: 1px solid var(--premium-gold);
 }
 
-.hs-btn-primary:hover {
+.hs-boton-primary:hover {
     background-color: transparent;
     color: var(--premium-gold);
 }
 
-.hs-btn-secondary {
+.hs-boton-secondary {
     background-color: transparent;
     color: var(--light-cream);
     border: 1px solid var(--smoked-wood);
 }
 
-.hs-btn-secondary:hover {
+.hs-boton-secondary:hover {
     background-color: var(--smoked-wood);
     color: var(--light-cream);
 }
@@ -594,7 +594,7 @@ img {
     margin-top: var(--space-md);
 }
 
-.filter-btn {
+.filter-boton {
     background: transparent;
     color: var(--light-cream);
     border: 1px solid var(--smoked-wood);
@@ -607,8 +607,8 @@ img {
     transition: var(--transition-smooth);
 }
 
-.filter-btn:hover,
-.filter-btn.active {
+.filter-boton:hover,
+.filter-boton.active {
     background-color: var(--premium-gold);
     color: var(--primary-black);
     border-color: var(--premium-gold);
@@ -678,7 +678,7 @@ img {
 }
 
 /* Favorite Button (Local Storage Integration) */
-.favorite-btn {
+.favorite-boton {
     position: absolute;
     top: var(--space-xs);
     right: var(--space-xs);
@@ -697,13 +697,13 @@ img {
     transition: var(--transition-smooth);
 }
 
-.favorite-btn:hover {
+.favorite-boton:hover {
     background-color: var(--colombian-red);
     color: #fff;
     border-color: var(--colombian-red);
 }
 
-.favorite-btn.favorited {
+.favorite-boton.favorited {
     color: var(--colombian-red);
     background-color: var(--light-cream);
     border-color: var(--light-cream);
@@ -738,7 +738,7 @@ img {
     flex-grow: 1;
 }
 
-.card-details-btn {
+.card-details-boton {
     background-color: transparent;
     color: var(--premium-gold);
     border: 1px solid var(--premium-gold);
@@ -752,7 +752,7 @@ img {
     transition: var(--transition-smooth);
 }
 
-.card-details-btn:hover {
+.card-details-boton:hover {
     background-color: var(--premium-gold);
     color: var(--primary-black);
 }
@@ -782,7 +782,7 @@ img {
     padding: var(--space-lg) var(--space-md) var(--space-md);
 }
 
-.close-modal-btn {
+.close-modal-boton {
     position: absolute;
     top: var(--space-xs);
     right: var(--space-xs);
@@ -795,7 +795,7 @@ img {
     transition: var(--transition-smooth);
 }
 
-.close-modal-btn:hover {
+.close-modal-boton:hover {
     color: var(--light-cream);
 }
 
@@ -1078,7 +1078,7 @@ summary::after {
     display: block;
 }
 
-.btn-submit {
+.boton-submit {
     width: 100%;
 }
 
